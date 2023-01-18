@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css" />
+    <style>
+      .headImage {
+        width: 90px;
+        margin: 50px auto;
+      }
+      .headImage img {
+        width: 100%;
+      }
+      .mainContainer {
+        display: flex;
+      }
+      .mainInfoCard {
+        flex: 3;
+      }
+      .mainProduct {
+        flex: 2;
+      }
+      .mainContainer > :first-child{
+        border-right: 1px solid rgb(152, 152, 152);
+      }
+      .info-firstHeading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+      /* input {
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 20px;
+      } */
+
+      .input-box {
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .btn-part {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .btn-part {
+        height: 60px;
+      }
+      .btn-part button {
+        font-size: 25px;
+      }
+      .Continue-btn {
+        background-color: #1773b0;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .return-btn {
+        color: #1773b0;
+        background-color: white;
+        border: none;
+      }
+      .form-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .form-input {
+        height: 45px;
+        padding: 4px 10px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        border: none;
+        border: 1.2px solid rgb(174, 170, 170);
+        outline-color: #2fa0eb;
+        width: 100%;
+      }
+
+      .full-width {
+        width: 100%;
+      }
+
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        color: #1773b0;
+      }
+      .ship-add{
+        margin-top: 35px;
+      }
+      .mainProduct{
+        background-color: rgb(239, 239, 239);
+      }
+     
+    </style>
+  </head>
+  <body class="mainContainer">
+    <div class="mainInfoCard">
+      <div class="headImage">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0590/4095/6580/files/Untitled_design_x320.png?v=1643627388"
+          alt="icon"
+        />
+       
+      </div>
+      <form class="input-box">
+        <h1>Information</h1>
+        <div class="info-firstHeading">
+          <h2>Contact information</h2>
+          <span> Already have an account? <a href="">Log in</a></span>
+        </div>
+        <input
+          class="form-input full-width"
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Email or mobile phone number"
+          maxlength="50"
+        />
+        <div class="form-row">
+          <input type="checkbox" id="declaration" name="declaration" />
+          <label for="declaration">Email me with news and offers</label>
+        </div>
+        <h2 class="ship-add">Shipping address</h2>
+        <select name="countryCode" id="countrySelect" required="" class="form-input">
+          <option value="US">Country/Region</option>
+          <option value="US">United States</option>
+          <option value="IN">India</option>
+          <option disabled="" value="">---</option>
+          <option value="AU">Australia</option>
+          <option value="CA">Canada</option>
+          <option value="CN">China</option>
+          <option value="FR">France</option>
+          <option value="HK">Hong Kong SAR</option>
+          <option value="IN">India</option>
+          <option value="IL">Israel</option>
+          <option value="MY">Malaysia</option>
+          <option value="MU">Mauritius</option>
+          <option value="NP">Nepal</option>
+          <option value="NZ">New Zealand</option>
+          <option value="SG">Singapore</option>
+          <option value="ZA">South Africa</option>
+          <option value="GB">United Kingdom</option>
+          <option value="US">United States</option>
+        </select>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="First name"
+          class="form-input"
+        />
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Last name"
+          class="form-input"
+        />
+        <input
+          type="text"
+          id="company"
+          name=""
+          class="form-input full-width"
+          placeholder="company (optional)"
+        />
+        <input
+          type="text"
+          id="address"
+          name=""
+          class="form-input full-width"
+          placeholder="Address"
+        />
+        <input
+          type="text"
+          id="apartment"
+          name=""
+          class="form-input full-width"
+          placeholder="Apartment, suite, etc. (optional)"
+        />
+        <div class="form-row">
+          <input
+            type="text"
+            id="city"
+            name=""
+            placeholder="City"
+            class="form-input"
+          />
+          <input
+            type="text"
+            id=""
+            name=""
+            placeholder="company (optional)"
+            class="form-input"
+          />
+          <input
+            type="number"
+            id="pincode"
+            name=""
+            placeholder="PIN code"
+            class="form-input"
+          />
+        </div>
+        <input
+          type="number"
+          id="phone"
+          class="form-input full-width"
+          name=""
+          placeholder="Phone"
+        />
+        <div class="form-row">
+          <input type="checkbox" id="declaration" name="" />
+          <label for="">Save this information for next time</label>
+        </div>
+        <div class="btn-part">
+          <button class="return-btn">❮ Return to cart</button>
+          <button class="Continue-btn">Payment</button>
+        </div>
+        <footer>
+          <hr />
+          <ul>
+            <li>Refund policy</li>
+            <li>Shipping policy</li>
+            <li>Privacy policy</li>
+            <li>Terms of service</li>
+          </ul>
+        </footer>
+      </form>
+      
+    </div>
+    <div class="mainProduct"></div>
+  </body>
+  <script>
+    // let addressData = JSON.parse(localStorage("addData"));
+
+    let forBtn = document.querySelector("form")
+     
+    forBtn.addEventListener("submit",(e)=>{
+      e.preventDefault()
+      const contactInfo = document.querySelector("#email").value;
+      const countryInfo = document.querySelector("#countrySelect").value;
+      const firstName = document.querySelector("#firstName").value;
+      const lastName = document.querySelector("#lastName").value;
+      const company = document.querySelector("#company").value;
+      const address = document.querySelector("#address").value;
+      const apartment = document.querySelector("#apartment").value;
+      const city = document.querySelector("#city").value;
+      const pincode = document.querySelector("#pincode").value;
+      const phone =document.querySelector("#phone").value;
+
+      console.log(contactInfo)
+      console.log(countryInfo)
+      console.log(firstName)
+      console.log(lastName)
+      console.log(company)
+      console.log(address)
+      console.log(apartment)
+      console.log(city)
+      console.log(pincode)
+      console.log(phone)
+
+      window.location.href="payment.html";
+    })
+
+  </script>
+</html>
