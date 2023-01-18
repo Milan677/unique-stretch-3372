@@ -1,0 +1,326 @@
+header{
+    margin-top: 20px;
+    
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#top{
+    width: 92%;
+    height: 55px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.logo img{
+    width: 100%;
+    
+}
+.logo span{
+    font-size: 24px;
+    color: rgb(107, 102, 102);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 7px;
+}
+
+.search{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 192);
+}
+
+.bulk{
+    width: 15%;
+    border-radius: 5PX;
+    background-color: #2E3192;
+    
+}
+.bulk span{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+}
+
+
+
+
+.shop{
+    width: 15%; 
+    border-right: 1px solid rgb(197, 195, 195);
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#typesearch{
+    width: 66%;
+
+}
+#search_item{
+
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+    padding: 16px;
+     outline: none;
+    
+}
+#search_item::placeholder{
+    color:rgb(190, 179, 179) ;
+}
+#searchbtn{
+    width: 18%;
+}
+#searchbtn button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #376968;
+    border: 0;
+    cursor: pointer;
+
+}
+
+#catagories{
+    width: 92%;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    grid-template-columns: repeat(10,1fr);
+}
+
+
+#tac div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 15px;
+}
+#tac div{
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 10px;
+}
+#tac span{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #0d0d0e;
+    
+}
+
+#discover{
+    width: 92%;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    background-image: url("https://thumbs.dreamstime.com/b/website-element-blue-bubbles-page-design-modern-background-div-contemporary-design-rising-bubbles-website-127054582.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#left{
+}
+
+.one{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(184, 213, 226);
+}
+.two{
+    text-align: center;
+    margin: 10px;
+    font-size: 60px;
+    color: white;
+}
+.three{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+#parent{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#parent div{
+    margin-top: 15px;
+}
+#parent div img{
+    width: 100%;
+}
+
+.women{
+    width: 60px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.women img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 15px;
+ 
+}
+
+
+#ladiesData,#mendata,#accessories,#HomeDecor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    margin: auto;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+
+.imgdiv{
+    width: 100%;
+  
+}
+.imgdiv img{
+   width: 100%;
+   height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+   
+}
+.card{
+   
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.ladiestitle{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.Ldesc{
+    font-size: 15px;
+    color: rgb(117, 116, 116);
+    padding-left: 10px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.price{
+    font-size: 22px;
+    color: #2E3192;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+}
+.addtocart,#addtocart{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid rgb(6, 6, 177);
+    border-radius: 5px;
+    color: rgb(0, 0, 175);
+    background-color: white;
+}
+
+
+
+#viewmore,#viewmore2,#viewmore3,#viewmore4{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 220px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    color: rgb(0, 0, 175);
+    background-color:blue;
+    font-size: 20px;
+    border: 0;
+    color: white;
+}
+#gridshow{
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    margin-top: 25px;
+    grid-template-columns: repeat(5,1fr);
+
+}
+
+#maincontainer{
+    width: 92%;
+    margin: auto;
+}
+
+#bottom{
+    width: 100;
+    height: 30px;
+    background-color: black;
+    margin-top: 25px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+#bottom div{
+ 
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #AAAAAB;
+}
+#copyright{
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+#copyright div{
+    width: 100%;
+}
+
+
