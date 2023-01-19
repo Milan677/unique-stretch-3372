@@ -6,35 +6,10 @@ let mendata = document.getElementById("mendata")
 let accessories = document.getElementById("accessories")
 let HomeDecor = document.getElementById("HomeDecor")
 let maincontainer = document.getElementById("maincontainer")
-let gridshow = document.getElementById("gridshow")  
-header.innerHTML = `
-<div id="top">
-           
-<div class="logo">
-    <div ><img src="https://shopping.imimg.com/style/im_logo.jpg" alt="err"></div>
-     <span>Shopping</span>  
-   
-</div>
-<div class="search">
- <div class="shop"> Shop </div>
+let gridshow = document.getElementById("gridshow")
 
- <div id="typesearch">
-  <input type="search" placeholder="What are you looking for ?" id="search_item">
-</div>
 
-<div  id="searchbtn">
-  <button> Search</button>
-</div>
- 
-</div>
-
-<div class="bulk">
-   <span>Bulk Requirement</span> 
-</div>
-
-</div>
-`
-catagories.innerHTML = `
+ catagories.innerHTML = `
 <a id="LadClick">
 <div id="tac">
 <div id="LadiesClick"> <img src="https://shopping.imimg.com/style/ladies-wear.png" alt=""></div>
@@ -101,7 +76,7 @@ dicover.innerHTML = `
 <div id="left">
             <div class="one">Discover</div>
             <div class="two">𝒲𝒾𝓃𝓉𝑒𝓇 𝒞𝑜𝓁𝓁𝑒𝒸𝓉𝒾𝑜𝓃</div>
-            <div class="three">On IndiaMart</div>
+            <div class="three">On UpStore</div>
          </div>
 
          <div id="right">
@@ -117,7 +92,8 @@ dicover.innerHTML = `
 
          </div>
 `
-ladiesData.innerHTML= `
+
+ladiesData.innerHTML = `
 <div class="card">
 
 <div class="imgdiv">
@@ -468,64 +444,60 @@ HomeDecor.innerHTML = `
 
 //  catogries clicking
 let LadClick = document.getElementById("LadClick")
-LadClick.addEventListener("click",()=>{
+LadClick.addEventListener("click", () => {
   maincontainer.innerHTML = null
-  fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Ladieswear").then((res)=>{
-  return res.json()
-})
-.then((data)=>{
-  LadClickdata(data)
-  
-})
+  fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Ladieswear").then((res) => {
+    return res.json()
+  })
+    .then((data) => {
+      LadClickdata(data)
+
+    })
 })
 
 let Mclick = document.getElementById("Mclick")
-Mclick.addEventListener("click",()=>{
+Mclick.addEventListener("click", () => {
   maincontainer.innerHTML = null
-  fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Menswear").then((res)=>{return res.json()})
-  .then((data)=>{
-    MClickdata(data)
-  })
+  fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Menswear").then((res) => { return res.json() })
+    .then((data) => {
+      MClickdata(data)
+    })
 })
 
 
 
 let Accesserioclick = document.getElementById("Accesserioclick")
-Accesserioclick.addEventListener("click",()=>{
+Accesserioclick.addEventListener("click", () => {
   maincontainer.innerHTML = null
-  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Accessories").then((res)=>{return res.json()})
-  .then((data)=>{
-    MClickdata(data)
-  })
-
+  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Accessories").then((res) => { return res.json() })
+    .then((data) => {
+      MClickdata(data)
+    })
 })
 
 let Homedecor = document.getElementById("Homedecorclick")
-Homedecor.addEventListener("click",()=>{
+Homedecor.addEventListener("click", () => {
   maincontainer.innerHTML = null
-  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Homedecor").then((res)=>{return res.json()})
-  .then((data)=>{
-    MClickdata(data)
-  })
+  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Homedecor").then((res) => { return res.json() })
+    .then((data) => {
+      MClickdata(data)
+    })
 
 })
 
-function LadClickdata(data){
-  
-  
+function LadClickdata(data) {
+  maincontainer.innerHTML = null
+
   data.forEach((element) => {
-    
     let card = document.createElement("div")
     let imgdiv = document.createElement("div")
     imgdiv.className = "imgdiv"
-
-    card.className = "card" 
-
+    card.className = "card"
     let image = document.createElement("img")
     image.src = element.image
 
     let title = document.createElement("p")
-    title.innerText = element.tittle.substring(0,20)
+    title.innerText = element.tittle.substring(0, 20)
     title.className = "ladiestitle"
 
     let desc = document.createElement("p")
@@ -539,17 +511,31 @@ function LadClickdata(data){
     let AddtoCart = document.createElement("button")
     AddtoCart.innerText = "Add To Card"
     AddtoCart.className = "addtocart"
-
-    AddtoCart.addEventListener("click",()=>{
+    AddtoCart.addEventListener("click", () => {
       let CartData = JSON.parse(localStorage.getItem("CartData")) || []
       let alreday = false
 
-      for(let i  = 0 ; i< CartData.length ; i++){
-        if(CartData[i].desc == element.desc){
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
           alreday = true
           break;
         }
       }
+
+      if (alreday == true) {
+        alert("item already in cart")
+      }
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
+      }
+    })
+
+    imgdiv.append(image)
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    gridshow.append(card)
+    maincontainer.append(gridshow)
       if(alreday == true){
         alert("item already in cart")
       }
@@ -569,23 +555,22 @@ function LadClickdata(data){
 
 
 
-function MClickdata(data){                              
-  
-  maincontainer.innerHTML
-  
+function MClickdata(data) {
+
+  maincontainer.innerHTML = null
+
   data.forEach((element) => {
-    
+
     let card = document.createElement("div")
     let imgdiv = document.createElement("div")
     imgdiv.className = "imgdiv"
-
-    card.className = "card" 
+    card.className = "card"
 
     let image = document.createElement("img")
     image.src = element.image
 
     let title = document.createElement("p")
-    title.innerText = element.title.substring(0,20)
+    title.innerText = element.title.substring(0, 20)
     title.className = "ladiestitle"
 
     let desc = document.createElement("p")
@@ -599,53 +584,47 @@ function MClickdata(data){
     let AddtoCart = document.createElement("button")
     AddtoCart.innerText = "Add To Card"
     AddtoCart.className = "addtocart"
-
-    AddtoCart.addEventListener("click",()=>{
+    AddtoCart.addEventListener("click", () => {
       let CartData = JSON.parse(localStorage.getItem("CartData")) || []
       let alreday = false
 
-      for(let i  = 0 ; i< CartData.length ; i++){
-        if(CartData[i].desc == element.desc){
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
           alreday = true
           break;
         }
       }
-      if(alreday == true){
+      if (alreday == true) {
         alert("item already in cart")
       }
-      else{
-      CartData.push(element)
-      localStorage.setItem("CartData",JSON.stringify(CartData))
-      alert("item added to cart")
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
       }
-    }) 
+    })
 
     imgdiv.append(image)
-     card.append(imgdiv,title,desc,price,AddtoCart)
-     gridshow.append(card)
-     maincontainer.append(gridshow)
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    gridshow.append(card)
+    maincontainer.append(gridshow)
   });
 }
 
-// 
+function LadClickdata(data) {
+  maincontainer.innerHTML = null
 
-
-function LadClickdata(data){
-  
-  
   data.forEach((element) => {
-    
     let card = document.createElement("div")
     let imgdiv = document.createElement("div")
     imgdiv.className = "imgdiv"
-
-    card.className = "card" 
+    card.className = "card"
 
     let image = document.createElement("img")
     image.src = element.image
 
     let title = document.createElement("p")
-    title.innerText = element.tittle.substring(0,20)
+    title.innerText = element.tittle.substring(0, 20)
     title.className = "ladiestitle"
 
     let desc = document.createElement("p")
@@ -659,159 +638,101 @@ function LadClickdata(data){
     let AddtoCart = document.createElement("button")
     AddtoCart.innerText = "Add To Card"
     AddtoCart.className = "addtocart"
-
-    AddtoCart.addEventListener("click",()=>{
+    AddtoCart.addEventListener("click", () => {
       let CartData = JSON.parse(localStorage.getItem("CartData")) || []
       let alreday = false
 
-      for(let i  = 0 ; i< CartData.length ; i++){
-        if(CartData[i].desc == element.desc){
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
           alreday = true
           break;
         }
       }
-      if(alreday == true){
+      if (alreday == true) {
         alert("item already in cart")
       }
-      else{
-      CartData.push(element)
-      localStorage.setItem("CartData",JSON.stringify(CartData))
-      alert("item added to cart")
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
       }
-    }) 
+    })
 
     imgdiv.append(image)
-     card.append(imgdiv,title,desc,price,AddtoCart)
-     gridshow.append(card)
-     maincontainer.append(gridshow)
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    gridshow.append(card)
+    maincontainer.append(gridshow)
   });
 }
 
 let viewmoreBtn = document.getElementById("viewmore")
-viewmoreBtn.addEventListener("click",()=>{
+viewmoreBtn.addEventListener("click", () => {
   viewmoreBtn.innerHTML = null
 
   let ladiesData = document.getElementById("ladiesData")
 
-fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Ladieswear").then((res)=>{
-  return res.json()
-})
-.then((data)=>{
+  fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Ladieswear").then((res) => {
+    return res.json()
+  })
+    .then((data) => {
 
-  showData(data)
-})
-
+      showData(data)
+    })
 })
 
 
 let viewmore2Btn = document.getElementById("viewmore2")
-
-viewmore2Btn.addEventListener("click",()=>{
+viewmore2Btn.addEventListener("click", () => {
   viewmore2Btn.innerHTML = null
-    fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Menswear").then((res)=>{
-      return res.json()
-    })
-    .then((mensData)=>{
+  fetch("https://63c58a3fe1292e5bea25cbd2.mockapi.io/Menswear").then((res) => {
+    return res.json()
+  })
+    .then((mensData) => {
       showmensData(mensData)
     })
 
-    
+
 })
 
 let viewmore3Btn = document.getElementById("viewmore3")
-viewmore3Btn.addEventListener("click",()=>{
+viewmore3Btn.addEventListener("click", () => {
   viewmore3Btn.innerHTML = null
-    fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Accessories").then((res)=>{
-      return res.json()
-    })
-    .then((AccessoriesData)=>{
+  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Accessories").then((res) => {
+    return res.json()
+  })
+    .then((AccessoriesData) => {
       showAcc(AccessoriesData)
     })
 
 })
 
 let viewmore4btn = document.getElementById("viewmore4")
-viewmore4btn.addEventListener("click",()=>{
+viewmore4btn.addEventListener("click", () => {
   viewmore4btn.innerHTML = null
-  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Homedecor").then((res)=>{
+  fetch("https://63c64dd4dcdc478e15beb8da.mockapi.io/Homedecor").then((res) => {
     return res.json()
   })
-  .then((HomeDecor)=>{
-    showHomeDecc(HomeDecor)
-  })
+    .then((HomeDecor) => {
+      showHomeDecc(HomeDecor)
+    })
 })
 
 
-function showmensData(data){
-  data.forEach((element)=>{
-    
-    let card = document.createElement("div")
-let imgdiv = document.createElement("div")
-imgdiv.className = "imgdiv"
-
-card.className = "card" 
-
-let image = document.createElement("img")
-image.src = element.image
-
-let title = document.createElement("p")
-title.innerText = element.title.substring(0,20)
-title.className = "ladiestitle"
-
-let desc = document.createElement("p")
-desc.innerText = element.desc
-desc.className = "Ldesc"
-
-let price = document.createElement("h3")
-price.innerText = element.price
-price.className = "price"
-
-let AddtoCart = document.createElement("button")
-AddtoCart.innerText = "Add To Card"
-AddtoCart.className = "addtocart"
-
-AddtoCart.addEventListener("click",()=>{
-  let CartData = JSON.parse(localStorage.getItem("CartData")) || []
-  let alreday = false
-
-  for(let i  = 0 ; i< CartData.length ; i++){
-    if(CartData[i].desc == element.desc){
-      alreday = true
-      break;
-    }
-  }
-  if(alreday == true){
-    alert("item already in cart")
-  }
-  else{
-  CartData.push(element)
-  localStorage.setItem("CartData",JSON.stringify(CartData))
-  alert("item added to cart")
-  }
-})
-
-imgdiv.append(image)
-
- card.append(imgdiv,title,desc,price,AddtoCart)
- mendata.append(card)
-
-  })
-}
-
-function showData(data){
+function showmensData(data) {
+  maincontainer.innerHTML = null
   data.forEach((element) => {
 
     let card = document.createElement("div")
     let imgdiv = document.createElement("div")
     imgdiv.className = "imgdiv"
 
-    card.className = "card" 
+    card.className = "card"
 
     let image = document.createElement("img")
     image.src = element.image
 
     let title = document.createElement("p")
-    title.innerText = element.tittle.substring(0,20)
+    title.innerText = element.title.substring(0, 20)
     title.className = "ladiestitle"
 
     let desc = document.createElement("p")
@@ -826,46 +747,159 @@ function showData(data){
     AddtoCart.innerText = "Add To Card"
     AddtoCart.className = "addtocart"
 
-    AddtoCart.addEventListener("click",()=>{
+    AddtoCart.addEventListener("click", () => {
       let CartData = JSON.parse(localStorage.getItem("CartData")) || []
       let alreday = false
 
-      for(let i  = 0 ; i< CartData.length ; i++){
-        if(CartData[i].desc == element.desc){
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
           alreday = true
           break;
         }
       }
-      if(alreday == true){
+      if (alreday == true) {
         alert("item already in cart")
       }
-      else{
-      CartData.push(element)
-      localStorage.setItem("CartData",JSON.stringify(CartData))
-      alert("item added to cart")
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
       }
-    }) 
+    })
 
     imgdiv.append(image)
 
-     card.append(imgdiv,title,desc,price,AddtoCart)
-     ladiesData.append(card)
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    mendata.append(card)
+  })
+}
+function showData(data) {
+  data.forEach((element) => {
+
+    let card = document.createElement("div")
+    let imgdiv = document.createElement("div")
+    imgdiv.className = "imgdiv"
+    card.className = "card"
+
+    let image = document.createElement("img")
+    image.src = element.image
+
+    let title = document.createElement("p")
+    title.innerText = element.tittle.substring(0, 20)
+    title.className = "ladiestitle"
+
+    let desc = document.createElement("p")
+    desc.innerText = element.desc
+    desc.className = "Ldesc"
+
+    let price = document.createElement("h3")
+    price.innerText = element.price
+    price.className = "price"
+
+    let AddtoCart = document.createElement("button")
+    AddtoCart.innerText = "Add To Card"
+    AddtoCart.className = "addtocart"
+
+    AddtoCart.addEventListener("click", () => {
+      let CartData = JSON.parse(localStorage.getItem("CartData")) || []
+      let alreday = false
+
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
+          alreday = true
+          break;
+        }
+      }
+      if (alreday == true) {
+        alert("item already in cart")
+      }
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
+      }
+    })
+
+    imgdiv.append(image)
+
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    ladiesData.append(card)
   });
 }
 
-function showAcc(data){
+function showAcc(data) {
+  maincontainer.innerHTML = null
+  data.forEach((element) => {
+
+    let card = document.createElement("div")
+    let imgdiv = document.createElement("div")
+    imgdiv.className = "imgdiv"
+    card.className = "card"
+
+    let image = document.createElement("img")
+    image.src = element.image
+
+    let title = document.createElement("p")
+    title.innerText = element.title.substring(0, 20)
+    title.className = "ladiestitle"
+
+    let desc = document.createElement("p")
+    desc.innerText = element.desc.substring(0, 20)
+    desc.className = "Ldesc"
+
+    let price = document.createElement("h3")
+    price.innerText = element.price
+    price.className = "price"
+
+    let AddtoCart = document.createElement("button")
+    AddtoCart.innerText = "Add To Card"
+    AddtoCart.className = "addtocart"
+    AddtoCart.addEventListener("click", () => {
+      let CartData = JSON.parse(localStorage.getItem("CartData")) || []
+      let alreday = false
+
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
+          alreday = true
+          break;
+        }
+      }
+      if (alreday == true) {
+        alert("item already in cart")
+      }
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
+      }
+    })
+
+    imgdiv.append(image)
+
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    accessories.append(card)
+  });
+}
+
+function showHomeDecc(data) {
+  maincontainer.innerHTML = null
   data.forEach((element) => {
 
     let card = document.createElement("div")
     let imgdiv = document.createElement("div")
     imgdiv.className = "imgdiv"
 
-    card.className = "card" 
+    card.className = "card"
 
     let image = document.createElement("img")
     image.src = element.image
 
     let title = document.createElement("p")
+    title.innerText = element.title.substring(0, 20)
+    title.className = "ladiestitle"
+
+    let desc = document.createElement("p")
+    desc.innerText = element.desc.substring(0, 20)
     title.innerText = element.title.substring(0,20)
     title.className = "ladiestitle"
 
@@ -881,86 +915,31 @@ function showAcc(data){
     AddtoCart.innerText = "Add To Card"
     AddtoCart.className = "addtocart"
 
-    AddtoCart.addEventListener("click",()=>{
+
+    AddtoCart.addEventListener("click", () => {
       let CartData = JSON.parse(localStorage.getItem("CartData")) || []
       let alreday = false
 
-      for(let i  = 0 ; i< CartData.length ; i++){
-        if(CartData[i].desc == element.desc){
+      for (let i = 0; i < CartData.length; i++) {
+        if (CartData[i].desc == element.desc) {
           alreday = true
           break;
         }
       }
-      if(alreday == true){
+      if (alreday == true) {
         alert("item already in cart")
       }
-      else{
-      CartData.push(element)
-      localStorage.setItem("CartData",JSON.stringify(CartData))
-      alert("item added to cart")
+      else {
+        CartData.push(element)
+        localStorage.setItem("CartData", JSON.stringify(CartData))
+        alert("item added to cart")
       }
-    }) 
+    })
 
     imgdiv.append(image)
 
-     card.append(imgdiv,title,desc,price,AddtoCart)
-     accessories.append(card)
-  });
-}
-
-function showHomeDecc(data){
-  data.forEach((element) => {
-
-    let card = document.createElement("div")
-    let imgdiv = document.createElement("div")
-    imgdiv.className = "imgdiv"
-
-    card.className = "card" 
-
-    let image = document.createElement("img")
-    image.src = element.image
-
-    let title = document.createElement("p")
-    title.innerText = element.title.substring(0,20)
-    title.className = "ladiestitle"
-
-    let desc = document.createElement("p")
-    desc.innerText = element.desc.substring(0,20)
-    desc.className = "Ldesc"
-
-    let price = document.createElement("h3")
-    price.innerText = element.price
-    price.className = "price"
-
-    let AddtoCart = document.createElement("button")
-    AddtoCart.innerText = "Add To Card"
-    AddtoCart.className = "addtocart"
-
-
-    AddtoCart.addEventListener("click",()=>{
-      let CartData = JSON.parse(localStorage.getItem("CartData")) || []
-      let alreday = false
-
-      for(let i  = 0 ; i< CartData.length ; i++){
-        if(CartData[i].desc == element.desc){
-          alreday = true
-          break;
-        }
-      }
-      if(alreday == true){
-        alert("item already in cart")
-      }
-      else{
-      CartData.push(element)
-      localStorage.setItem("CartData",JSON.stringify(CartData))
-      alert("item added to cart")
-      }
-    }) 
-
-    imgdiv.append(image)
-
-     card.append(imgdiv,title,desc,price,AddtoCart)
-     HomeDecor.append(card)
+    card.append(imgdiv, title, desc, price, AddtoCart)
+    HomeDecor.append(card)
   });
 }
 
