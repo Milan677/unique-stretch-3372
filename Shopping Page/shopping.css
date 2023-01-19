@@ -33,8 +33,6 @@ body {
     z-index: 2;
 }
 
-#top {
-=======
 header{
     margin-top: 20px;
     
@@ -115,11 +113,9 @@ header{
 }
 
 #search_item {
-.bulk{
     width: 15%;
     border-radius: 5PX;
     background-color: #2E3192;
-    
 }
 .bulk span{
     display: block;
@@ -188,10 +184,6 @@ header{
     background-color: #376968;
     border: 0;
     cursor: pointer;
-}
-
-#catagories {
-
 }
 
 #catagories{
