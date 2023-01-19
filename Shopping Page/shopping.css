@@ -34,6 +34,16 @@ body {
 }
 
 #top {
+=======
+header{
+    margin-top: 20px;
+    
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#top{
     width: 92%;
     height: 55px;
     margin: auto;
@@ -62,11 +72,33 @@ body {
 .search {
     width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;    
+}
+
+.logo{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.logo img{
+    width: 100%;
+    
+}
+.logo span{
+    font-size: 24px;
+    color: rgb(107, 102, 102);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 7px;
+}
+
+.search{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
     border-radius: 5px;
     border: 1px solid rgb(187, 187, 192);
 }
-
 .shop {
     width: 15%;
     border-right: 1px solid rgb(197, 195, 195);
@@ -83,6 +115,39 @@ body {
 }
 
 #search_item {
+.bulk{
+    width: 15%;
+    border-radius: 5PX;
+    background-color: #2E3192;
+    
+}
+.bulk span{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+}
+
+
+
+
+.shop{
+    width: 15%; 
+    border-right: 1px solid rgb(197, 195, 195);
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#typesearch{
+    width: 66%;
+
+}
+#search_item{
     width: 100%;
     font-size: 18px;
     font-weight: 400;
@@ -104,6 +169,18 @@ body {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
+     outline: none;
+    
+}
+#search_item::placeholder{
+    color:rgb(190, 179, 179) ;
+}
+#searchbtn{
+    width: 18%;
+}
+#searchbtn button{
+    display: block;
+    margin: auto;
     width: 100%;
     padding: 15px;
     font-size: 20px;
@@ -114,6 +191,10 @@ body {
 }
 
 #catagories {
+
+}
+
+#catagories{
     width: 92%;
     display: grid;
     margin: auto;
@@ -132,6 +213,17 @@ body {
 }
 
 #tac div {
+    grid-template-columns: repeat(10,1fr);
+}
+
+
+#tac div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 15px;
+}
+#tac div{
     height: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -151,6 +243,14 @@ body {
 }
 
 #discover {
+#tac span{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #0d0d0e;
+    
+}
+
+#discover{
     width: 92%;
     margin: auto;
     padding-bottom: 20px;
@@ -162,6 +262,15 @@ body {
 }
 
 .one {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#left{
+}
+
+.one{
     text-align: center;
     font-size: 70px;
     margin-top: 100px;
@@ -201,6 +310,17 @@ body {
 }
 
 .women {
+    grid-template-columns: repeat(2,1fr);
+}
+
+#parent div{
+    margin-top: 15px;
+}
+#parent div img{
+    width: 100%;
+}
+
+.women{
     width: 60px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     height: 60px;
@@ -267,7 +387,6 @@ body {
     margin-top: 10px;
     margin-bottom: 10PX;
 }
-
 .addtocart,
 #addtocart {
     display: block;
@@ -291,9 +410,6 @@ body {
     background-color: #333;
     color: white;
 }
-
-
-
 #viewmore,
 #viewmore2,
 #viewmore3,
@@ -321,8 +437,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
 
 }
-
-#maincontainer {
+#maincontainer{
     width: 92%;
     margin: auto;
 }
