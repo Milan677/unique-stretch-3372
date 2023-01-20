@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping_page</title>
+    <link rel="stylesheet" href="shopping.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <div id="nav">
+            <div id="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="search">
+                <div class="shop"> Shop </div>
+                <div id="typesearch">
+                    <input type="search" placeholder="What are you looking for ?" id="search_item">
+                </div>
+                <div id="searchbtn">
+                    <button> <i class="material-icons">search</i> Search</button>
+                </div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <h2 style="color: wheat;">Hello, <h2 id="uname">Hello</h2></h2>
+            </div>
+        </div>
+    </nav>
+
+    <div id="catagories">
+        <a id="LadClick">
+            <div id="tac">
+                <div id="LadiesClick"> <img src="https://shopping.imimg.com/style/ladies-wear.png" alt=""></div>
+                <span>Ladies Wear</span>
+            </div>
+        </a>
+
+        <a id="Mclick">
+            <div id="tac">
+                <div> <img src="https://shopping.imimg.com/style/men-wear.png" alt=""></div>
+                <span>Men Wear</span>
+            </div>
+        </a>
+
+        <div id="tac">
+            <div> <img src="https://shopping.imimg.com/style/footwear.png" alt=""></div>
+            <span>FootWear</span>
+        </div>
+
+
+        <div id="tac">
+            <div> <img src="https://shopping.imimg.com/style/beauty-products.png" alt=""></div>
+            <span>Beauty <br> Products</span>
+        </div>
+
+        <a id="Accesserioclick">
+            <div id="tac">
+                <div> <img src="https://shopping.imimg.com/style/mobile-accessories.png" alt=""></div>
+                <span>Mobile <br> Accessories </span>
+            </div>
+        </a>
+
+        <a id="Homedecorclick">
+            <div id="tac">
+                <div> <img src="https://shopping.imimg.com/style/home-decor.png" alt=""></div>
+                <span>Home Decor</span>
+            </div>
+        </a>
+
+        <div id="tac">
+            <div> <img src="https://shopping.imimg.com/style/artificial-jewellery.png" alt=""></div>
+            <span>Arificial <br> Jewellery </span>
+        </div>
+
+
+        <div id="tac">
+            <div> <img src="https://shopping.imimg.com/style/fertilizer.png" alt=""></div>
+            <span> Fertilizer </span>
+        </div>
+
+
+        <div id="tac">
+            <div> <img src="https://shopping.imimg.com/style/light.png" alt=""></div>
+            <span>Light</span>
+        </div>
+
+
+        <div id="tac">
+            <div> <img src="https://shopping.imimg.com/style/industrial-chemicals.png" alt=""></div>
+            <span>Industrial Chemicals</span>
+        </div>
+
+    </div>
+
+    <div id="discover">
+        <div id="left">
+            <div class="one">Discover</div>
+            <div class="two">𝒲𝒾𝓃𝓉𝑒𝓇 𝒞𝑜𝓁𝓁𝑒𝒸𝓉𝒾𝑜𝓃</div>
+            <div class="three">On UpStore</div>
+        </div>
+
+        <div id="right">
+            <div id="parent">
+                <div>
+                    <img src="https://shopping.imimg.com/style/b1.webp" alt="">
+                </div>
+
+                <div>
+                    <img src="https://shopping.imimg.com/style/b2.webp" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="maincontainer">
+
+        <div id="gridshow"></div>
+
+        <div style="display: flex;width: 100%;margin: auto;margin-top: 15px;">
+            <div class="women">
+                <img src="https://shopping.imimg.com/style/ladies-wear.png" alt="">
+            </div>
+            <div>
+                <h1 style="margin-top: 20px; font-size: 27px; font-family: Arial, Helvetica, sans-serif;
+      color: #111111;">Ladies Wear</h1>
+            </div>
+        </div>
+
+        <div id="ladiesData">
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/RO/GF/CQ/8344890/8084a-2-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Bodycon Dress With Shoulder Cut</p>
+
+                <p class="Ldesc">Pannkh</p>
+
+                <h3 class="price">₹ 999</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/12/WN/HY/NI/90086993/sfdrss1781-1-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Stripes Poly Rayon Dress R894</p>
+
+                <p class="Ldesc">lanram Traders</p>
+
+                <h3 class="price">₹ 10299</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/LC/YJ/LI/20345987/r894-2-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Stripes Poly Rayon Dress R894</p>
+
+                <p class="Ldesc">Wama Trendz</p>
+
+                <h3 class="price">₹ 1999</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/ID/LK/OE/35667744/kk-8-500x500.jpg" alt="">
+                </div>
+
+                <p class="ladiestitle">Maroon Cotton Maxi fancy Dress</p>
+
+                <p class="Ldesc">Siabhi Studios</p>
+
+                <h3 class="price">₹ 4,050</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/10/PN/BE/HZ/8530435/wwj03i-4-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Pink Women's Jumpsuit Dress</p>
+
+                <p class="Ldesc">Yelloe Designs Inc.</p>
+
+                <h3 class="price">₹ 599</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+        </div>
+
+
+        <button id="viewmore">View More</button>
+
+
+        <div style="display: flex;width: 100%;margin: auto;margin-top: 15px;">
+            <div class="women">
+                <img src="https://shopping.imimg.com/style/men-wear.png" alt="">
+            </div>
+            <div>
+                <h1 style="margin-top: 20px; font-size: 27px; font-family: Arial, Helvetica, sans-serif;
+    color: #111111;">Men Wear</h1>
+            </div>
+        </div>
+
+
+
+        <div id="mendata">
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/UT/AJ/YM/31299794/mens-full-sleeves-raglan-plain-849935-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Mens Full Sleeves Raglan-plain Cut</p>
+
+                <p class="Ldesc">Enthopia</p>
+
+                <h3 class="price">₹ 450</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/12/ZW/DH/AS/90086993/jjko-532green-1-d7233403-471b-4fa1-a376-b156f61a3f24-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Men blue & White Solid Kurta Only</p>
+
+                <p class="Ldesc">NOZ2TOZ</p>
+
+                <h3 class="price">₹ 852</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/OA/YL/SR/13078142/blue-strechable-denim-jeans-931549-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Studio Nexx Men's Regular Fit Jeans</p>
+
+                <p class="Ldesc">Store Apt</p>
+
+                <h3 class="price">₹ 1,099</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/MN/ZQ/IV/10883763/1-794fbca2-3c23-4f68-b9b0-f59c646f70d9-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Men Dark Blue Printed Track Pants</p>
+
+                <p class="Ldesc">AKR Industries Private Limited</p>
+
+                <h3 class="price">₹ 449</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/2/EG/LX/FD/5444595/3-13597bc1-8659-4420-86d5-79ec97d71d1d-500x500.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Stylish denim fashionable men shirts</p>
+
+                <p class="Ldesc">lorenderm</p>
+
+                <h3 class="price">₹ 799</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+        </div>
+
+        <button id="viewmore2">View More</button>
+
+
+        <div style="display: flex;width: 100%;margin: auto;margin-top: 15px;">
+            <div class="women">
+                <img src="https://shopping.imimg.com/style/mobile-accessories.png" alt="">
+            </div>
+            <div>
+                <h1 style="margin-top: 20px; font-size: 27px; font-family: Arial, Helvetica, sans-serif;
+    color: #111111;">Mobile Accessories</h1>
+            </div>
+        </div>
+
+        <div id="accessories">
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/BX/RI/HU/26954735/41ko-gcrsxl-sl1200-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Micro Usb Braided Cables, Portronics Konnect</p>
+
+                <p class="Ldesc">A to Z </p>
+
+                <h3 class="price">₹ 62.40</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/CI/AY/FT/95869149/6666-1000x1000.png"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Zebronics Evolve Blue Bluetooth Headset</p>
+
+                <p class="Ldesc">The Hobby Shop</p>
+
+                <h3 class="price">₹ 725 </h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/OV/FE/DS/38238383/newproject-89-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Phone Converter Ipphone Xr To Iphone 13</p>
+
+                <p class="Ldesc">S.m.rottor Die Cast</p>
+
+                <h3 class="price">₹ 699</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/9/TN/XC/OI/147282547/38974876-1059399010932863-1318725976879792128-n-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Oculus Touch Left Hand Controller</p>
+
+                <p class="Ldesc">Asnkart Global Solutions LLP</p>
+
+                <h3 class="price">₹ 3,400</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/12/BS/SD/HM/47699750/1-dd97ffd5-1b00-415e-8b7c-e11c259f9d78-1000x1000.png"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">TVN MXLY2ZM/A 1 m USB 2.0 to Lightning Cable</p>
+
+                <p class="Ldesc">Triveni World</p>
+
+                <h3 class="price">₹ 399</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+        </div>
+
+        <button id="viewmore3">View More</button>
+
+
+
+        <div style="display: flex;width: 100%;margin: auto;margin-top: 15px ;">
+            <div class="women">
+                <img src="https://shopping.imimg.com/style/mobile-accessories.png" alt="">
+            </div>
+            <div>
+                <h1 style="margin-top: 20px; font-size: 27px; font-family: Arial, Helvetica, sans-serif;
+    color: #111111;">HomeDecor</h1>
+            </div>
+        </div>
+
+        <div id="HomeDecor">
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/11/SE/VW/KP/64575997/4-e092342f-c8b7-4985-8ec7-456a79fe1f93-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Iron Wall Hanging Art for Home Decor</p>
+
+                <p class="Ldesc">Swasti Sales </p>
+
+                <h3 class="price">₹ 4,999</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/8/FJ/PS/GI/2462629/bnfmun88-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Show My & Mounted Sculptur Love</p>
+
+                <p class="Ldesc">Jaunty Private Limited</p>
+
+                <h3 class="price">₹ 495 </h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/VF/WD/NM/85504720/69c39bfe-7d62-4fd7-b07d-decb81d74b40-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Navy Blue Leaf King Size Bedsheet</p>
+
+                <p class="Ldesc">TradeUNO Private Limited </p>
+
+                <h3 class="price">₹ 1,485</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2022/10/LE/QP/OL/99238720/clock13-400x-bffd6c1e-ac5a-4028-9ada-c65f87f77778-1000x1000.jpg  "
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Wooden designer Clock Panel</p>
+
+                <p class="Ldesc">Idekors</p>
+
+                <h3 class="price">₹ 2,000</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+
+
+            <div class="card" id="card">
+
+                <div class="imgdiv">
+                    <img src="https://5.imimg.com/data5/ECOM/Default/2023/1/BJ/VX/ME/2403926/whatsapp-image-2021-10-26-at-1-18-31-am-1000x1000.jpg"
+                        alt="">
+                </div>
+
+                <p class="ladiestitle">Symphony fancy desginer Wall Art</p>
+
+                <p class="Ldesc">Shiraz Handicrafts</p>
+
+                <h3 class="price">₹ 5,400</h3>
+
+                <button id="addtocart">Add To Cart</button>
+
+            </div>
+
+        </div>
+
+        <button id="viewmore4">View More</button>
+
+    </div>
+
+
+    <div id="bottom">
+        <div>Copyright © 1996-2023 UpStore. All rights reserved.</div>
+
+        <div></div>
+
+        <div id="copyright">
+            <div>Home</div>
+            <div>Sell on UpStore </div>
+            <div>FAQ </div>
+            <div>Terms of Use </div>
+            <div> Privacy Policy</div>
+        </div>
+    </div>
+
+</body>
+
+<script src="shopping.js"></script>
+
+</html>
