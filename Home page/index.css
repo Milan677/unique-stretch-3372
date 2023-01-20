@@ -1,0 +1,509 @@
+* {
+    font-family: inter, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+}
+
+#nav {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: rgba(151, 90, 90, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 2;
+}
+
+#menu {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.blocks>:hover{
+    font-size: 20px;
+}
+
+#banner {
+    width: 100%;
+}
+
+.blocks>h4 {
+    display: inline;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.blocks>i {
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+}
+
+#location {
+    background-color: aliceblue;
+    width: 15%;
+    padding: 20px;
+
+}
+
+#location+input {
+    padding: 20px;
+    width: 50%;
+}
+
+#location~button {
+    width: 20%;
+    padding: 20px;
+    border: none;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+#srchbar {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+#location~button:disabled {
+    pointer-events: none;
+}
+
+#location~button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#location~button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#banner>div {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+#row>div {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+#row>div>div {
+    width: 15%;
+    text-align: center;
+    border: 1px solid rgb(78, 77, 77);
+    padding: 15px;
+    font-size: 20px;
+}
+
+#row {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#security {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#security i {
+    font-size: 30px;
+
+}
+
+#connect {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+#connect>div {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.viewall {
+    background-color: rgb(25, 165, 152);
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.sideimg button:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+.sideimg-child {
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+}
+
+.opq-img {
+    background-color: #000000;
+    position: relative;
+    width: 25%
+}
+
+.opq-img>img {
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.sideimg {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+}
+
+.main li {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.main h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product-box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid rgb(194, 193, 193);
+    padding: 10px;
+}
+
+.product-box>:nth-child(1) {
+    width: 30%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+}
+
+#getfree {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 20%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#getfree>:nth-child(1) {
+    margin-left: 40px;
+}
+
+#getfree input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 175, 175)
+}
+
+#covid {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgb(235, 237, 253);
+}
+
+#covid>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#covid>div>:nth-child(1) {
+    width: 20%;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#brands img {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+}
+
+#parent-brands {
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#footer li {
+    list-style: none;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+#footer {
+    background-color: rgb(230, 240, 255);
+    padding-top: 10px;
+    width: 85%;
+    text-align: left;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding: 4%;
+}
+
+#footer>div {
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+}
+
+#footer ul {
+    margin-top: 50px;
+    color: black;
+}
+
+#payment>div {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+
+}
+
+#payment img {
+    width: 5%;
+    height: 30px;
+    display: flex;
+}
+
+#appdownload {
+    background-color: rgb(248, 249, 255);
+}
+
+#payment {
+    margin-left: 40px;
+}
+
+#nav2 {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+#foot {
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#text {
+    width: 40%;
+    padding-left: 50px;
+}
+
+#img {
+    width: 30%;
+}
+
+#img>img {
+    width: 100%
+}
+
+#text>img {
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.sp {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* footer1 */
+#footer1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 50px;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#img1 {
+    width: 30%;
+}
+
+#img1>img {
+    height: 95%;
+    width: 80%;
+    margin-left: 50px;
+}
+
+#text1 {
+    height: 90%;
+    width: 40%;
+}
+
+#input1 {
+    height: 50px;
+    width: 35px;
+    border-right: none;
+    font-size: 20px;
+}
+
+#input2 {
+    height: 50px;
+    border-left: none;
+    font-size: 20px;
+}
+
+#input3 {
+    height: 55px;
+    width: 180px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(37, 178, 131);
+}
+
+#input3:hover {
+    background-color: rgb(24, 80, 62);
+    cursor: pointer;
+    color: aliceblue
+}
+
+#download {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
