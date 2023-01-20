@@ -1,0 +1,356 @@
+* {
+    font-family: inter, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav {
+    width: 100%;
+    height: 35px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(151, 90, 90, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 2;
+}
+
+#top {
+    width: 92%;
+    height: 55px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 15%;
+    margin-left: -150px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+#logo>img {
+    width: 100%;
+}
+
+.search {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 192);
+}
+
+.shop {
+    width: 15%;
+    border-right: 1px solid rgb(197, 195, 195);
+    font-size: 20px;
+    padding: 5px;
+    background-color: white;
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+}
+
+#typesearch {
+    width: 66%;
+}
+
+#search_item {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+    padding: 16px;
+    outline: none;
+
+}
+
+#search_item::placeholder {
+    color: rgb(190, 179, 179);
+}
+
+#searchbtn {
+    width: 25%;
+}
+
+#searchbtn button {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #376968;
+    border: 0;
+    cursor: pointer;
+}
+
+#catagories {
+    width: 92%;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 100px;
+}
+
+
+#tac div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+#tac div {
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 10px;
+}
+
+#tac span {
+    font-size: 17px;
+    color: #0d0d0e;
+
+}
+
+#discover {
+    width: 92%;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    background-image: url("https://thumbs.dreamstime.com/b/website-element-blue-bubbles-page-design-modern-background-div-contemporary-design-rising-bubbles-website-127054582.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.one {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    color: rgb(184, 213, 226);
+}
+
+.two {
+    text-align: center;
+    margin: 10px;
+    font-size: 60px;
+    color: white;
+}
+
+.three {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+#parent {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#parent div {
+    margin-top: 15px;
+}
+
+#parent div img {
+    width: 100%;
+}
+
+.women {
+    width: 60px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.women img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+
+}
+
+
+#ladiesData,
+#mendata,
+#accessories,
+#HomeDecor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin: auto;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+
+.imgdiv {
+    width: 100%;
+
+}
+
+.imgdiv img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.ladiestitle {
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.Ldesc {
+    font-size: 15px;
+    color: rgb(117, 116, 116);
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 22px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+}
+
+.addtocart,
+#addtocart {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #333;
+    background-color: white;
+    font-weight: bold;
+    align-items: baseline;
+}
+
+.addtocart:hover,
+#addtocart:hover {
+    background-color: #333;
+    color: white;
+}
+
+#viewmore,
+#viewmore2,
+#viewmore3,
+#viewmore4 {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 220px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    color: rgb(0, 0, 175);
+    background-color: rgb(8, 71, 66);
+    font-size: 20px;
+    border: 0;
+    color: white;
+}
+
+#gridshow {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    margin-top: 25px;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+#maincontainer {
+    width: 90%;
+    margin: auto;
+}
+
+#bottom {
+
+    height: 30px;
+    background-color: black;
+    margin-top: 25px;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#bottom div {
+
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAAAAB;
+}
+
+#copyright {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+#copyright div {
+    width: 100%;
+}
+
+#uname{
+    color: wheat;
+}
