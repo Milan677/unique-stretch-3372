@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img style="margin-bottom: 20px;" width="50%" src="/images/logo.png" alt="">
+        </div>
+        <div id="menu">
+            <div class="blocks">
+                <i class="material-icons" style="color: white;">local_offer</i>
+                <h4 style="color: white;">Shopping</h4>
+            </div>
+            <div class="blocks">
+                <i class="material-icons" style="color: white;">storefront</i>
+                <h4 style="color: white;">Sell</h4>
+            </div>
+            <div class="blocks">
+                <i class="material-icons" style="color: white;">help_outline</i>
+                <h4 style="color: white;">Help</h4>
+            </div>
+            <div class="blocks">
+                <i class="material-icons" style="color: white;">message</i>
+                <h4 style="color: white;">Messages</h4>
+            </div>
+            <div class="blocks">
+                <i class="material-icons" style="color: white;">account_circle</i>
+                <h4 style="color: white;" onclick="login()">Sign In</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav2">
+        <p> Building & Construction</p>
+        <p>Electronic & Electrical</p>
+        <p>Drugs & Pharma</p>
+        <p>Industrial Machinery</p>
+        <p>Food & Agriculture</p>
+    </div>
+    <div id="banner">
+        <img style="width: 100%;" onclick="login()" src="/images/Banner2.jpg" alt="">
+    </div>
+
+    
+    <!-- Category section -->
+    <!-- We connect Buyers and sellers Banner-->
+    <div id="connect">
+        <div>
+            <h1 style="font-weight: normal ; font-size: 30px;">We Connect <br> <Span style="font-size: 40px;">Buyers &
+                    Sellers</Span></h1>
+            <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-weight: lighter;">UpStore is
+                India's Largest online B2B <br> marketplace,connecting buyers with suppliers</p>
+            <div id="security">
+                <div>
+                    <i class="material-symbols-outlined"> verified</i>
+                    <p>Trusted <br> Platform </p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined">
+                        verified_user
+                    </i>
+                    <p>Safe & <br> Secure </p>
+                </div>
+                <div>
+                    <i class="material-symbols-outlined">
+                        insert_comment
+                    </i>
+                    <p>Quick <br> Assistance </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img width="100%" src="https://hm.imimg.com/imhome_gifs/stressed-to-relaxed.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Building Construction Material & Equipment -->
+
+    <div class="main">
+        <div>
+            <h2>Building Construction Material & Equipment</h2>
+            <div class="sideimg">
+                <div class="opq-img">
+                    <img src="https://hm.imimg.com/imhome_gifs/building-construction.jpg" alt="">
+                    <div class="sideimg-child">
+                        <ul>
+                            <li>Crushing Machines &amp; Plants</li>
+                            <li>Prefabricated Houses</li>
+                            <li>Scaffolding Planks &amp; Plates</li>
+                            <li>Construction Machines</li>
+                        </ul>
+                        <button class="viewall">
+                            View All
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="grid">
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/RS/UH/GLADMIN-5385/brick-making-machines-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Brick Making Machines</h3>
+                            <p>Fly Ash Brick Making Machine</p>
+                            <p>Clay Brick Making Machine</p>
+                            <p>Cement Brick Making Machine</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/OI/XL/GLADMIN-34562/passenger-lifts-125x125.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Passenger Lifts</h3>
+                            <p>Residential Elevator</p>
+                            <p>Kone Passenger lift</p>
+                            <p>Stair Lift</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://3.imimg.com/data3/KS/JQ/GLADMIN-2475/tmt-bars-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>TMT Bars</h3>
+                            <p>TMT Steel Bars</p>
+                            <p>TATA TMT Bars</p>
+                            <p>Kamdhenu TMT Bars</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://5.imimg.com/data5/QO/YD/GLADMIN-2/plywoods-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Plywoods</h3>
+                            <p>Shuttering Plywood</p>
+                            <p>Laminated Plywood</p>
+                            <p>Waterproof Plywood</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/JE/DA/MY-2/hydraulic-excavator-500x500-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Excavator</h3>
+                            <p>Hitachi Excavator</p>
+                            <p>Hyundai Excavator</p>
+                            <p>Komatsu Excavator</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/VG/QG/GLADMIN-27799/emulsion-paints-125x125.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Emulsion Paints</h3>
+                            <p>Asion Emulsion Paints</p>
+                            <p>Berger Emulsion Paints</p>
+                            <p>Nerolac Emulsion Paints</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://3.imimg.com/data3/UT/PB/GLADMIN-12558/wood-door-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Wooden Door</h3>
+                            <p>Designer Wooden Door</p>
+                            <p>Plywood Door</p>
+                            <p>Wooden Flush Door</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://3.imimg.com/data3/VN/LA/GLADMIN-2047/pvc-pipes-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>PVC Pipes</h3>
+                            <p>Finolox Pipes</p>
+                            <p>Rigid PVC Pipes</p>
+                            <p>Flexible PVC Pipes</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/YD/WE/GLADMIN-23639/building-brick-125x125.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Building Bricks</h3>
+                            <p>Red Brick</p>
+                            <p>Fly Ash Bricks</p>
+                            <p>Cement Brick</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr width="100%" color="black" size="10px" align="center" />
+
+        <div>
+            <h2>Electronics & Electrical Goods & Supplies</h2>
+            <div class="sideimg">
+                <div class="opq-img">
+                    <img src="	https://hm.imimg.com/imhome_gifs/electronics-electrical-goods.jpg" alt="">
+                    <div class="sideimg-child">
+                        <ul>
+                            <li>Voltage & Power Stabilizers</li>
+                            <li>GPS and Navigation Devices</li>
+                            <li>Biometrics & Access Control Devices</li>
+                            <li>CCTV, Surveillance Systems and Parts</li>
+                        </ul>
+                        <button class="viewall">
+                            View All
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="grid">
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://4.imimg.com/data4/HI/RA/GLADMIN-181283/photocopier-machine-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Offices Automation Products</h3>
+                            <p>Multifunction Printer</p>
+                            <p>Xerox Machine</p>
+                            <p>Fingerprint Scanners</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/GLADMIN/Default/2022/3/MZ/VG/IH/87924/arduino-sensor-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Sensors & Transducers</h3>
+                            <p>Level Sensers</p>
+                            <p>Pproximity Sensor</p>
+                            <p>Sensor for Home & Office</p>
+                            <p>Load Cell</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/JW/EX/GLADMIN-2/digital-controller-125x125.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Process Controllers</h3>
+                            <p>Level Controllers</p>
+                            <p>Motor Controllers</p>
+                            <p>Tempatraure Controllers</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/RO/JS/GLADMIN-2/lighting-controllers1-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Control & Automation</h3>
+                            <p>VFD</p>
+                            <p>PLC</p>
+                            <p>HMI</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/XB/KH/GLADMIN-105874/light-emitting-diode-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Diodes & Active Devices</h3>
+                            <p>Integrated Circuits</p>
+                            <p>Thyristors</p>
+                            <p>Light Emmitting Diode</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/GLADMIN/Default/2022/6/SI/KH/VT/87924/house-wire-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Wires & Cables</h3>
+                            <p>House Wires</p>
+                            <p>Armoured Cables</p>
+                            <p>Power Cables</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/LX/YW/GLADMIN-2/inverter-batteries-125x125.png" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Batteries</h3>
+                            <p>Lithium Batteries</p>
+                            <p>Invertor Batteries</p>
+                            <p>Electric Vehicle Battery</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://5.imimg.com/data5/VB/IL/GLADMIN-2/street-light-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Commercial Lights</h3>
+                            <p>Flood Lights</p>
+                            <p>Street Lights</p>
+                            <p>Panel Light</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/EX/HO/GLADMIN-37340/solar-power-systems-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Solar % Renewable Energy</h3>
+                            <p>Solar Panels</p>
+                            <p>Solar Invertor</p>
+                            <p>Solar Pumps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr width="100%" color="black" size="10px" align="center" />
+
+        <!-- Pharmaceutical Drug, Medicine, Medical Care & Consultation -->
+
+
+        <div>
+            <h2>Pharmaceutical Drug, Medicine, Medical Care & Consultation</h2>
+            <div class="sideimg">
+                <div class="opq-img">
+                    <img src="https://hm.imimg.com/imhome_gifs/bigBn06.jpg" alt="">
+                    <div class="sideimg-child">
+                        <ul>
+                            <li>Pharma Raw Material</li>
+                            <li>Pharmaceutical Chemical </li>
+                            <li>Clinical Trial Services</li>
+                            <li>X-Ray Services</li>
+                        </ul>
+                        <button class="viewall">
+                            View All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/KT/MJ/MY-16675294/pharmaceutical-drug-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Pharmaceutical Drug</h3>
+                            <p>Anticoagulant and Antiplatelet Drugs</p>
+                            <p>Antiparasitic Drug</p>
+                            <p>Antibiotic Tablets, Capsule & Syrup</p>
+                            <p>Antifungal Injection, Tablet & Syrup</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/JR/DH/GLADMIN-7427/nutritional-supplements-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Nutraceuticals</h3>
+                            <p>Vitamin Tablets & Capsules</p>
+                            <p>Weight Loss Supplement</p>
+                            <p>Dietary Supplements</p>
+                            <p>Mineral Supplement</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/PQ/HW/MY-7191707/thinq-mass-gainer-282-lbs-29-125x125.png"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Fitness Supplements</h3>
+                            <p>Weight Gain Nutrition</p>
+                            <p>Weight Gain Capsule</p>
+                            <p>Pre workout Supplements</p>
+                            <p>Immune Booster</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/BA/YT/MY-2018319/multidisciplinary-care-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Medical Treatment Services</h3>
+                            <p>Dental Treatment Services</p>
+                            <p>Medical Surgery Services</p>
+                            <p>Eye Treatment</p>
+                            <p>Plastic Surgery Services</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://5.imimg.com/data5/JM/MB/MY-4222986/8-125x125.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Medical Test Services</h3>
+                            <p>CT Scan Services</p>
+                            <p>Ultrasound Services</p>
+                            <p>Blood Testing</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/YC/QB/MY-3773531/allopathic-pcd-pharma-franchise-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>PCD Pharma Franchise</h3>
+                            <p>Pharma Franchise</p>
+                            <p>Allopathic PCD Pharma Franchise</p>
+                            <p>Ayurvedic PCD Pharma Franchise</p>
+                            <p>Veterinary PCD Pharma Franchise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr width="100%" color="black" size="10px" align="center" />
+
+
+        <!-- Hospital and Medical Equipment -->
+
+
+        <div>
+            <h2>Hospital and Medical Equipment</h2>
+            <div class="sideimg">
+                <div class="opq-img">
+                    <img src="https://hm.imimg.com/imhome_gifs/bigBn04.jpg" alt="">
+                    <div class="sideimg-child">
+                        <ul>
+                            <li>Medical Ventilator</li>
+                            <li>Oxygen Cylinder </li>
+                            <li>Patient Handling </li>
+                            <li>POCT Devices</li>
+                        </ul>
+                        <button class="viewall">
+                            View All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://hm.imimg.com/imhome_gifs/cvid09.png" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Medical Laboratory Instruments</h3>
+                            <p>Hematology Analyzers</p>
+                            <p>Antiparasitic Drug</p>
+                            <p>Biochemistry Analyzer</p>
+                            <p>Blood Bank Equipments</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/IW/EI/MY-3076857/patient-monitoring-system-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Patient Monitoring Systems</h3>
+                            <p>Blood Pressure Machine</p>
+                            <p>Capnometer</p>
+                            <p>Medical Monitor</p>
+                            <p>Surgical Monitor</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/NT/KF/MY-1383163/infrared-thermometer-125x125.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Thermometer</h3>
+                            <p>Infrared Thermometers</p>
+                            <p>Forehead Thermometer</p>
+                            <p>Non Contact Thermometer</p>
+                            <p>Digital Thermometers</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/CM/CP/JH/SELLER-5038493/neonatal-portable-icu-ventilator-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Medical Imaging Machine</h3>
+                            <p>X Ray Machine</p>
+                            <p>Ultrasound Machines</p>
+                            <p>ECG Machine</p>
+                            <p>Doppler Machine</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/OQ/SV/MY-905156/stethoscope-cardio-125x125.jpg" alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Stethoscope</h3>
+                            <p>Dual Head Stethoscope</p>
+                            <p>Electronic Stethoscope</p>
+                            <p>Pediatric Stethoscope</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/NU/ZZ/AQ/SELLER-35236796/electric-suction-unit-125x125.jpg"
+                                alt="">
+                        </div>
+                        <div class="product">
+                            <h3>Suction Machine</h3>
+                            <p>Foot Operated Suction Unit</p>
+                            <p>Electric Suction Unit</p>
+                            <p>Liposuction Machine</p>
+                            <p>Central Suction System</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr width="100%" color="black" size="10px" align="center" />
+
+        <!-- Industrial Plants, Machinery & Equipment -->
+
+        <div>
+            <h2>Industrial Plants, Machinery & Equipment</h2>
+            <div class="sideimg">
+                <div class="opq-img">
+                    <img src="https://hm.imimg.com/imhome_gifs/industrial-plants-machinery.jpg" alt="">
+                    <div class="sideimg-child">
+                        <ul>
+                            <li>Agarbatti Making Machines</li>
+                            <li>Disposable Plate Making Machine</li>
+                            <li>Oil Extraction Machine</li>
+                            <li>Animal Feed Making Machine</li>
+                        </ul>
+                        <button class="viewall">
+                            View All
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="grid">
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/WE/MN/MY-2/food-processing-machine-125x125.jpg" alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Food Processing Machine</h3>
+                            <p>Flour Mill</p>
+                            <p>Rice Mill Machinery</p>
+                            <p>Spice Processing Machines</p>
+                        </div>
+                    </div>
+
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/SF/NU/MY-2/high-speed-automatic-t-shirt-bag-making-machine-two-line--125x125.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Bag Making Machine</h3>
+                            <p>Non Woven Bag Making Machine</p>
+                            <p>Paper Bag Making Machine</p>
+                            <p>Biodegradable Bag Making Machine</p>
+                        </div>
+                    </div>
+
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://5.imimg.com/data5/NG/VV/GLADMIN-2/nop300-125x125.png" alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Snack Machine</h3>
+                            <p>Popcorn Machines</p>
+                            <p>Pani Puri Making Machine</p>
+                            <p>Namkeen Making Machines</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://3.imimg.com/data3/UK/HT/MY-2/deck-125x125.jpg" alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Bakery & Dairy Machinery</h3>
+                            <p>Bakery Machinery</p>
+                            <p>Bakery Oven</p>
+                            <p>Sweets Making Machine</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/GLADMIN/Default/2022/6/MW/VE/VZ/87939/cnc-lathe-machine-125x125.png"
+                                alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>CNC Machines & Lathe Machine</h3>
+                            <p>Lathe Machine</p>
+                            <p>TCNC Machines</p>
+                            <p>CNC Vertical Machining Centers</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/TU/LV/GLADMIN-2070/flexographic-printing-machine-125x125.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Printing Machine</h3>
+                            <p>Large Format Printers</p>
+                            <p>Offset Printing Machines</p>
+                            <p>Sublimation Printing Machine</p>
+                        </div>
+                    </div>
+
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://3.imimg.com/data3/GF/WP/GLADMIN-45894/industrial-compressor-125x125.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Air Compressors</h3>
+                            <p>Oil Free Air Compressor</p>
+                            <p>Reciprocating Compressors</p>
+                            <p>Refrigeration Compressors</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div>
+                            <img width="100%" src="https://3.imimg.com/data3/YN/LI/MY-2/dsc_2766-125x125.jpg" alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Food Processing Plants</h3>
+                            <p>Animal Feed Making Machine</p>
+                            <p>Sugarcane Juice Machine</p>
+                            <p>Wet Grinder</p>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div>
+                            <img width="100%"
+                                src="https://5.imimg.com/data5/PA/NP/GLADMIN-2/seawaterfiltrationsystem-125x125.jpg"
+                                alt="">
+                        </div>
+
+                        <div class="product">
+                            <h3>Water Purification Plants</h3>
+                            <p>Water Softening Systems</p>
+                            <p>Water Treatment Plants</p>
+                            <p>Reverse Osmosis Plants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get free quotes from multiple sellers     -->
+    <div id="getfree">
+        <div>
+            <h1>Get <span style="font-weight: 900;">free</span> quotes from <br> multiple sellers </h1>
+            <div>
+                <div>
+                    <p>Tell us what You <b>Need</b></p>
+                </div>
+                <div>
+                    <p>Receive free Quotes from <b>sellers</b></p>
+                </div>
+                <div>
+                    <p> Seal the <b>Deal</b></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p style="font-size: 20px;">Tell us your Requirement</p>
+            <input style="width: 150%;" type="text" placeholder="Enter Product/Service name"> <br> <br>
+            <input type="number" placeholder="Enter your mobile number">
+            <br>
+            <br>
+            <input type="text" placeholder="Enter Your Name"> <br>
+            <br><br>
+            <button class="viewall">Submit Requirement</button>
+        </div>
+    </div>
+    <!-- Covid19 Prevention care -->
+    <div id="covid">
+        <section>
+            <h2>CORONA COVID-19 <br><span>Prevention & Care Supplies</span></h2>
+        </section>
+        <div>
+            <div>
+                <img width="100%" src="https://5.imimg.com/data5/JH/YO/MY-28303844/pollution-safety-mask-125x125.jpg"
+                    alt="">
+            </div>
+
+            <div>
+                <p>Mask, Sanitizer & Other Hygenic <br> Supplies</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img width="100%"
+                    src="https://5.imimg.com/data5/AE/HR/MY-19400528/occupational-health-center-medical-instruments-125x125.jpg"
+                    alt="">
+            </div>
+
+            <div>
+                <p>Hospltal Consumables & <br> Diagnostics</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parent-brands">
+        <h2>Explore Products from Premium Brands</h2>
+        <div id="brands">
+            <img src="/images/big-buyers.png" alt="">
+        </div>
+    </div>
+    <!--  -->
+
+    <div id="foot">
+        <div id="text">
+            <img src="https://hm.imimg.com/template-mdc/busy_im_logo.png" alt="">
+            <h1>Accounting Software</h1>
+            <p id="p">Trusted by <span class="sp">3,60,000+</span> Small Businesses across different domains</p>
+            <p class="p"> <i class="material-icons"
+                    style="color: rgb(16, 113, 1); font-weight: bold; padding-top: 5px;">check</i> &nbsp GST Accounting
+                Software</p>
+            <p class="p"> <i class="material-icons"
+                    style="color: rgb(16, 113, 1); font-weight: bold; padding-top: 5px;">check</i> &nbsp e-Invoice
+                Software</p>
+            <p class="p"> <i class="material-icons"
+                    style="color: rgb(16, 113, 1); font-weight: bold; padding-top: 5px;">check</i> &nbsp Inventory
+                Management Software</p>
+            <p class="p"> <i class="material-icons"
+                    style="color: rgb(16, 113, 1); font-weight: bold; padding-top: 5px;">check</i> &nbsp Way Billing
+                Software</p>
+        </div>
+        <div id="img">
+            <img src="https://hm.imimg.com/template-mdc/as_img.png" alt="">
+        </div>
+    </div>
+
+
+    <div id="footer1">
+        <div id="img1">
+            <img src="https://hm.imimg.com/imhome_gifs/app-img.png" alt="">
+        </div>
+        <div id="text1">
+            <h1>Get UpStore App</h1>
+            <p>Search for products/services and connect with verified sellers on the go!</p> <br>
+            <input id="input1" type="text" value="+91"><input id="input2" type="text" placeholder="enter mobile number">
+            <input id="input3" type="submit" value="send me the link">
+            <p>We will send you a link, open it on your phone to download the App</p>
+            <div id="download">
+                <div><img src="https://assets.pharmeasy.in/apothecary/images/googlePlay.svg?dim=256x0" alt=""></div>
+                <div>
+                    <img src="https://assets.pharmeasy.in/apothecary/images/appStore.svg?dim=256x0" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section     -->
+
+    <div id="footer">
+        <div style="display: flex;">
+            <div>
+                <ul style="list-style: none;">
+                    <h3>Company</h3>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Succes Stories</li>
+                    <li>Press Section</li>
+                    <li>Investor Section</li>
+                    <li>Help</li>
+                    <li>Feedback</li>
+                    <li>Complaints</li>
+                    <li>Customer Care</li>
+                    <li>Jobs & Career</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Suppliers Tool Kit</h3>
+                    <li>Sell on UpStore</li>
+                    <li>Latest BuyLead</li>
+                    <li>Learning Center</li>
+                    <li>Ship With UpStore</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Buyers Tool Kit</h3>
+                    <li>Post Your Requirement</li>
+                    <li>Products You Buy</li>
+                    <li>Search Products & Suppliers</li>
+                    <li>Pay With Up Store</li>
+                </ul>
+                <ul>
+                    <h3>Accounting Solutions</h3>
+                    <li>Accounting Software</li>
+                    <li>Tally on Mobile</li>
+                    <li>GST e-Invoice</li>
+                </ul>
+            </div>
+            <div style="text-align: center; padding-top: 40px;">
+                <h3>Follow us on </h3>
+                <div>
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=64x0" alt="">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=64x0" alt="">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=64x0" alt="">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=64x0" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="payment">
+            <h2>Our Payment Partners</h2>
+            <div>
+                <img src="https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/amazon.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/mobikwik.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/olamoney.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/maestro.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/mastercard.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/visa.png?dim=1024x0" alt="">
+                <img src="https://assets.pharmeasy.in/apothecary/images/rupay.png?dim=1024x0" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br><br><br>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

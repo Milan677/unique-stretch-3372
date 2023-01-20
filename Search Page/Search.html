@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Result</title>
+  <link rel="stylesheet" href="Search.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+
+<body>
+  <nav>
+    <div id="nav">
+      <div id="logo">
+        <img src="/images/logo.png" alt="">
+      </div>
+      <div class="search">
+        <div class="shop"> Shop </div>
+        <div id="typesearch">
+          <input type="search" placeholder="What are you looking for ?" id="search_item">
+        </div>
+        <div id="searchbtn">
+          <button> <i class="material-icons">search</i> Search</button>
+        </div>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <h2 style="color: wheat;">Hello, <h2 id="uname">Hello</h2>
+        </h2>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products from Search Result -->
+
+  <div id="container">
+    <div id="filter-box">
+      <h1>FILTERS</h1>
+      <div class="filter1">
+        <input type="checkbox" name="Men" value="Men" tabindex="1"> Men<br>
+        <input type="checkbox" name="Women" value="Women" tabindex="2"> Women
+      </div>
+      <h3>CATEGORIES</h3>
+      <div class="filter1">
+        <input type="checkbox" name="shirt" value="shirt" tabindex="1"> Shirt<br>
+        <input type="checkbox" name="jeans" value="jeans" tabindex="2"> Jeans<br>
+        <input type="checkbox" name="kurta" value="kurta" tabindex="3"> Kurta<br>
+        <input type="checkbox" name="dresses" value="dresses" tabindex="4"> Dresses<br>
+      </div>
+      <h3>BRANDS</h3>
+      <div class="filter1">
+        <input type="checkbox" name="shirt" value="shirt" tabindex="1"> Shirt<br>
+        <input type="checkbox" name="jeans" value="jeans" tabindex="2"> Jeans<br>
+        <input type="checkbox" name="kurta" value="kurta" tabindex="3"> Kurta<br>
+        <input type="checkbox" name="dresses" value="dresses" tabindex="4"> Dresses<br>
+      </div>
+      <h3>PRICE</h3>
+      <div class="filter1">
+        <input type="checkbox" name="shirt" value="shirt" tabindex="1"> Low to High<br>
+        <input type="checkbox" name="jeans" value="jeans" tabindex="2"> High to Low<br>
+      </div>
+    </div>
+    <div id="product-container">
+        
+    </div>
+  </div>
+
+
+  <!-- Footer Section -->
+  <div id="bottom">
+    <div>Copyright © 1996-2023 UpStore. All rights reserved.</div>
+
+    <div></div>
+
+    <div id="copyright">
+      <div>Home</div>
+      <div>Sell on UpStore </div>
+      <div>FAQ </div>
+      <div>Terms of Use </div>
+      <div> Privacy Policy</div>
+    </div>
+  </div>
+
+</body>
+
+<script src="Search.js"></script>
+
+</html>
