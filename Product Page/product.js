@@ -1,5 +1,5 @@
 let details = JSON.parse(localStorage.getItem("product-description"))
-let cartData = JSON.parse(localStorage.getItem("CartData"))||[]
+let CartData = JSON.parse(localStorage.getItem("CartData"))||[]
 let username = document.querySelector("#uname")
 username.innerHTML = localStorage.getItem("username")
 showdata(details)
@@ -48,10 +48,27 @@ function showdata(data) {
         `
     let cartbtn = document.querySelector(".cart")
 
-    cartbtn.addEventListener("click", function () {
-        cartData.push(details)
-        localStorage.setItem("CartData",JSON.stringify(cartData))
-    })
+    cartbtn.addEventListener("click", () => {
+        let alreday = false
+  
+        for (let i = 0; i < CartData.length; i++) {
+          if (CartData[i].id == data.id) {
+            alreday = true
+            break;
+          }
+        }
+        if (alreday == true) {
+          swal("", "Product already in the cart", "info")
+        }
+        else {
+          CartData.push(details)
+          localStorage.setItem("CartData", JSON.stringify(CartData))
+          swal("", "Product added to cart successfully", "success");
+        }
+      })
+}
 
+function gotocart(){
+    location.href = "/Cartpage/cart.html"
 }
 

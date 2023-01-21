@@ -49,8 +49,14 @@ body {
 }
 
 #banner {
-    width: 100%;
+    height:500px;
+    
 }
+ #banner>img{
+    height:100%;
+    width:100%
+} 
+
 
 .blocks>h4 {
     display: inline;
@@ -273,6 +279,10 @@ ul {
     align-items: center;
     border: 1px solid rgb(194, 193, 193);
     padding: 10px;
+}
+.product-box:hover{
+    background-color: #333;
+    color: #fff;
 }
 
 .product-box>:nth-child(1) {
@@ -506,4 +516,24 @@ ul {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+}
+
+
+/* category navbar */
+#category{
+    height:70px;
+    width:100%;
+    border:2px dashed white;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    font-size: larger;
 }
