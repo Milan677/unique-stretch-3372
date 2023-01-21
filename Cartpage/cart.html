@@ -1,179 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart page</title>
-    <link rel="stylesheet" href="./cart.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart page</title>
+  <link rel="stylesheet" href="./cart.css">
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
 
-    
 
-    <!-- nav bar  -->
-  
-    <nav id="navbar">
-  
-      <div>
-        <a href="">HOME</a>
-        <a href="">CONTACT</a>
+  <nav>
+    <div id="nav">
+      <div id="logo">
+        <img src="/images/logo.png" alt="">
       </div>
-      <div>
-        <img src="" alt="">
-      </div>
-      <div>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-regular fa-user"></i>
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </nav>
-    <hr>
-  
-    <!-- catgories -->
-  
-    <div id="catagory">
-      <div>
-        <div class="dropdown">
-  
-          <a href="" class="dropbtn">INDIAN WEAR</a>
-          <div class="dropdown-content1">
-            <a href="#">ETHNIC DRESS</a>
-            <a href="#">KURTA SETS</a>
-            <a href="#">LEHENGA SETS</a>
-          </div>
+      <div id="menu">
+        <div class="blocks">
+          <i class="material-icons" style="color: white;">help_outline</i>
+          <h4 style="color: white;">Help</h4>
         </div>
-      </div>
-      <div>
-        <div class="dropdown">
-          <a href="" class="dropbtn">WESTERN WEAR</a>
-  
-          <div class="dropdown-content1">
-            <a href="#">DRESSES & JUMPSUITS</a>
-            <a href="#">STRIPES AND CHECKS DRESSES</a>
-            <a href="#">CO-ORDINATED SETS</a>
-            <a href="">TOPS, T-SHIRTS & SHIRT</a>
-          </div>
+        <div class="blocks">
+          <i class="material-icons" style="color: white;">shopping_bag</i>
+          <h4 style="color: white;">Cart</h4>
         </div>
-      </div>
-      <div>
-        <div class="dropdown">
-  
-          <a href="" class="dropbtn">TUNIC</a>
-          <div class="dropdown-content1">
-            <a href="#">SHIRT STYLE TUNICS</a>
-            <a href="#">EMBROIDERY TUNICS</a>
-            <a href="#">NON EMBROIDERY TUNICS</a>
-          </div>
+        <div class="blocks">
+          <h2 id="username"></h2>
         </div>
-      </div>
-      <div>
-        <div class="dropdown">
-  
-          <a href="" class="dropbtn">BOTTOM WEAR</a>
-          <div class="dropdown-content1">
-            <a href="#">TROUSERS & CAPRIS</a>
-            <a href="#"> JEANS & JEGGINGS</a>
-            <a href="#">PALAZZO, SHARARA & GHARARA</a>
-            <a href="">TRACK PANTS</a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="dropdown">
-          <a href="" class="dropbtn">NIGHT WEAR</a>
-  
-        </div>
-      </div>
-  
-  
-    </div>
-    <div class="hero-image">
-      <div class="hero-text">
-        <h3 style="font-size:50px">SHOPPING CART</h3>
       </div>
     </div>
-  
-  
-  
-    <h2 id="total">Your total Products in the Cart - <span id="fav-total">0</span></h2>
-    <h3 id="totalprice">Your total bill = <span id="fav-sum">0</span></h3>
-  
-    <!-- empty cart -->
-    <h1 id="empty-cart"></h1>
-  
-    <!-- added Data to cart -->
-    <div id="addedData">
-  
-    </div>
-  
-    <!-- checkout page -->
-  
-    <div id="checkout-page">
-      <h3 id="total2"> total products - <span id="prod">0</span></h3>
-      <h3 id="totalprice2">Your total bill = <span id="totalp"></span></h3>
+  </nav>
+
+
+
+  <!-- nav bar  -->
+
+  <h2 id="total">Your total Products in the Cart = <span id="fav-total">0</span></h2>
+  <h3 id="totalprice">Your total bill = <span id="fav-sum">0</span></h3>
+
+  <!-- empty cart -->
+  <h1 id="empty-cart"></h1>
+
+  <!-- added Data to cart -->
+  <div id="addedData">
+
+  </div>
+
+  <!-- checkout page -->
+
+  <div id="checkout-page">
+
+
+    <div>
+
+      <h3 id="total2"> total products = <span id="prod">0</span></h3>
+      <h3 id="totalprice2">Your total bill = <span id="totalp">0</span></h3>
       <h3 id="tax">SALES TAX = <span id="tax2"></span></h3>
       <hr>
       <h3 id="finaltotal">ORDER TOTAL = <span id="ordert"></span></h3>
+      <hr>
       <button id="pay2"><a href="">CHECKOUT</a>
     </div>
-    <hr>
-  
-  
-  
-    <!-- bottom part -->
-  
-    <div id="bottom">
-  
-      <div>
-        <img src="./weblogo.jpg.jpg" alt="">
-      </div>
-      <div>
-        <h2>Shop</h2>
-        <a href="">Fabric</a>
-        <a href=""> Prints & Patterns</a>
-        <a href="">Home Furnishing</a>
-        <a href="">Bulk Inquires</a>
-        <a href="">Schedule a Live Session</a>
-      </div>
-      <div>
-        <h2>Quick links</h2>
-        <a href="">Wall Of Love</a>
-        <a href="https://www.tradeuno.com/pages/privacy-policy">Privacy Policy</a>
-        <a href="https://www.tradeuno.com/pages/terms-and-conditions">Terms & Conditions</a>
-        <a href="">Shipping and Refund Policies</a>
-        <a href="https://www.tradeuno.com/pages/faq">F.A.Q.</a>
-        <a href="https://www.tradeuno.com/policies/refund-policy"> Refund policy</a>
-        <a href="https://www.tradeuno.com/policies/terms-of-service">Terms of Service</a>
-        <a href="">Track Your Order</a>
-      </div>
-      <div>
-        <h2>TradeUno</h2>
-        <a href="">Our Growth Story</a>
-        <a href="https://www.tradeuno.com/pages/about-us">About Us</a>
-        <a href="">Blog</a>
-        <a href="https://www.tradeuno.com/pages/contact-us">Contact Us</a>
-        <a href="https://www.tradeuno.com/pages/recognition-awards">Recognition & Awards</a>
-        <a href="https://www.tradeuno.com/pages/donate-old-clothes">CSR</a>
-  
-      </div>
-      <div>
-        <h2>Reach Out</h2>
-        <p>135,Udyog Vihar, Phase 1, Gurugram, Haryana, India
-          Mon-Sat 10.00 AM To 7.00PM
-          Contact Us +91 9818896884</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MbRrwlP4MtsSXkIG-XBxvCnAQi5NuzQpqQ&usqp=CAU"
-          alt="">
-        <a
-          href="https://www.google.com/maps?ll=28.510287,77.079789&z=9&t=m&hl=en&gl=IN&mapclient=embed&cid=16986470022597680797">View
-          larger map</a>
-      </div>
+
+    <div>
+      <h3>Apply combo40 to get 20% discount</h3>
+      <form action="" id="discounttag">
+        <input type="text" placeholder="Apply combo40" id="cupon-filled">
+        <button>submit</button>
+      </form>
     </div>
-  
-  
-    <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
-  </body>
+
+
+  </div>
+
+
+  <!-- bottom part -->
+
+  <div id="bottom">
+    <div>Copyright © 1996-2023 UpStore. All rights reserved.</div>
+
+    <div></div>
+
+    <div id="copyright">
+        <div>Home</div>
+        <div>Sell on UpStore </div>
+        <div>FAQ </div>
+        <div>Terms of Use </div>
+        <div> Privacy Policy</div>
+    </div>
+</div>
+
+
+  <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
 
 <script src="cart.js"></script>
