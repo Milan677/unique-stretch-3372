@@ -13,6 +13,7 @@ displaycard(addtocartdata);
 
 
 
+
 function displaycard(data) {
 
 
