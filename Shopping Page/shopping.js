@@ -109,7 +109,8 @@ function MClickdata(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push({...element,quantity:1})
+        element.quantity = 1
+        CartData.push(element)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -228,6 +229,7 @@ function showmensData(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
+        element.quantity = 1
         CartData.push(element)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
@@ -285,7 +287,8 @@ function showData(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push({...element,quantity:1})
+        element.quantity = 1
+        CartData.push(element)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -342,7 +345,8 @@ function showAcc(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push({...element,quantity:1})
+        element.quantity = 1
+        CartData.push(element)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -400,7 +404,8 @@ function showHomeDecc(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push({...element,quantity:1})
+        element.quantity = 1
+        CartData.push(element)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -475,6 +480,7 @@ function searchData(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
+        element.quantity = 1
         CartData.push(element)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");

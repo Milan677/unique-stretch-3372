@@ -38,7 +38,6 @@ body {
 
 #logo {
     width: 15%;
-    
 }
 
 .blocks {
@@ -358,6 +357,6 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 4px;
+    padding: 5px;
     cursor: pointer;
 }
