@@ -199,7 +199,7 @@ html {
 /* discount page */
 #discounttag {
   display: flex;
-  gap: 10px;
+  gap: 11px;
 }
 
 #discounttag>input {
