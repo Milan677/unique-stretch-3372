@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<link rel="stylesheet" href="response.css">
+
+     
 <body>
 
     <!-- navbar -->
@@ -32,8 +35,12 @@
                     <button> <i class="material-icons">search</i> Search</button>
                 </div>
             </div>
+            <div onclick="gotocart()">
+                <h4 id="crt" style="color: white;"><i class="material-icons" style="color: white;">shopping_bag</i>Cart
+                </h4>
+            </div>
             <div style="display: flex; gap: 10px;">
-                <h2 style="color: wheat;">Hello, <h2 id="uname">Hello</h2></h2>
+                <h2 style="color: wheat;">Hello, <h2 id="uname"></h2></h2>
             </div>
         </div>
     </nav>
@@ -570,7 +577,7 @@
         <div></div>
 
         <div id="copyright">
-            <div>Home</div>
+         <a style="text-decoration: none;" href="/Home page/Index.html"><div>Home</div></a> 
             <div>Sell on UpStore </div>
             <div>FAQ </div>
             <div>Terms of Use </div>

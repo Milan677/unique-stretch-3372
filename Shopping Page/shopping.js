@@ -109,7 +109,7 @@ function MClickdata(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push(element)
+        CartData.push({...element,quantity:1})
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -285,7 +285,7 @@ function showData(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push(element)
+        CartData.push({...element,quantity:1})
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -342,7 +342,7 @@ function showAcc(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push(element)
+        CartData.push({...element,quantity:1})
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -400,7 +400,7 @@ function showHomeDecc(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
-        CartData.push(element)
+        CartData.push({...element,quantity:1})
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
       }
@@ -488,6 +488,9 @@ function searchData(data) {
     gridshow.append(card)
     maincontainer.append(gridshow)
   });
+}
+function gotocart(){
+  location.href = "/Cartpage/cart.html"
 }
 
 
