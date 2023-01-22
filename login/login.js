@@ -61,7 +61,7 @@ form2.addEventListener("submit", (e) => {
       if (form2.pass2.value == element.password) {
         
         localStorage.setItem("username",element.username)
-       swal("Good job!", "Lognin succesful", "success");
+       swal("Good job!", "Login succesful", "success");
         setTimeout(() => {
           //window.open("/Home page/Index.html")
           window.location.href = "/Shopping Page/shopping.html";
