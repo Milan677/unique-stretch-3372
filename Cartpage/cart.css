@@ -42,7 +42,9 @@ body {
   padding: 5px;
   margin-left: 20px;
 }
-
+#shopping{
+  text-align: end;
+}
 #logo>img {
   width: 100%;
 }
@@ -234,4 +236,502 @@ html {
 
 #copyright div {
   width: 100%;
+}
+
+
+
+
+
+/* for medium screen */
+
+@media (min-width:600px) and (max-width:1000px){
+      /* global */
+* {
+  font-family: inter, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  margin: 0px;
+  padding: 25px;
+}
+
+#nav {
+  width: 90%;
+  height: 30px;
+  padding: 18px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(151, 90, 90, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 35px;
+  z-index: 2;
+}
+
+#logo {
+  width: 15%;
+  margin-left: 12px;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  padding: 4px;
+  margin-left: 20px;
+}
+#shopping{
+  text-align: end;
+}
+#logo>img {
+  width: 100%;
+}
+
+#menu {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+  text-align: center;
+  padding: 5px;
+}
+
+#banner {
+  width: 100%;
+  position: relative;
+}
+
+.blocks>h4 {
+  display: inline;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.blocks>i {
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#username{
+  color: wheat;
+  margin-right: 70px;
+}
+
+/* image show */
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding-top: 45px;
+}
+
+/* catgories */
+
+
+/* added data to cart */
+#empty-cart{
+  height: auto;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+#addedData {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+  margin: auto;
+
+}
+
+#addedData>div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+#addedData>div>img {
+  height: 300px;
+  width: 80%;
+  margin: auto;
+}
+
+#addedData>div>button {
+  background-color: black;
+  color: white;
+  padding: 10px 90px 10px 90px;
+  margin-top: 10px;
+  cursor: pointer;
+  
+}
+
+#addedData>div>div {
+
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  margin: auto;
+  cursor: pointer;
+}
+
+#addedData>div>div>span {
+  margin-top: 20px;
+}
+
+/* cheakout page */
+
+#checkout-page {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  text-align: center;
+  padding: 2%;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+
+#checkout-page>div>button {
+
+  background-color: #03a032;
+  padding: 4%;
+  border: none;
+}
+
+#checkout-page>div>button>a {
+  color: white;
+  text-decoration: none;
+}
+
+#checkout-page>button>div>a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+
+/* discount page */
+#discounttag{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+#discounttag>input{
+  padding:4%;
+  border: none;
+  font-size: 15px;
+}
+#discounttag>button{
+  padding: 10px 30px 10px 30px;
+  font-size: 15px;
+  background-color: #03a032;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Footer CSS */
+#bottom {
+
+  height: 30px;
+  background-color: black;
+  margin-top: 25px;
+  display: grid;
+  padding-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#bottom div {
+
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #AAAAAB;
+}
+
+#copyright {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+#copyright div {
+  width: 100%;
+}
+
+
+}
+
+/* for small screens */
+
+
+@media (min-width:200px) and (max-width:599px){
+        /* global */
+* {
+  font-family: inter, sans-serif;
+  font-weight: 450;
+}
+
+body {
+  margin: 0px;
+  padding: 22px;
+}
+
+#nav {
+  width: 90%;
+  height: 30px;
+  padding: 17px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(151, 90, 90, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 35px;
+  z-index: 2;
+}
+
+#logo {
+  width: 28%;
+  margin-left: 12px;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  padding: 3px;
+  margin-left: 20px;
+}
+#shopping{
+  text-align: end;
+}
+#logo>img {
+  width: 100%;
+}
+
+#menu {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  padding: 4px;
+}
+
+#banner {
+  width: 100%;
+  position: relative;
+}
+
+.blocks>h4 {
+  display: inline;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.blocks>i {
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#username{
+  color: wheat;
+  margin-right: 180px;
+}
+
+/* image show */
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding-top: 45px;
+}
+
+/* catgories */
+
+
+/* added data to cart */
+#empty-cart{
+  height: auto;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+#addedData {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+  margin-top: 25px;
+  margin: auto;
+
+}
+
+#addedData>div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  padding: 8px;
+  
+}
+
+#addedData>div>img {
+  height: 300px;
+  width: 80%;
+  margin: auto;
+}
+
+#addedData>div>button {
+  background-color: black;
+  color: white;
+  padding: 10px 90px 10px 90px;
+  margin-top: 10px;
+  cursor: pointer;
+  
+}
+
+#addedData>div>div {
+
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  margin: auto;
+  cursor: pointer;
+}
+
+#addedData>div>div>span {
+  margin-top: 20px;
+}
+
+/* cheakout page */
+
+#checkout-page {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  text-align: center;
+  padding: 2%;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+
+#checkout-page>div>button {
+
+  background-color: #03a032;
+  padding: 3%;
+  border: none;
+}
+
+#checkout-page>div>button>a {
+  color: white;
+  text-decoration: none;
+}
+
+#checkout-page>button>div>a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+
+/* discount page */
+#discounttag{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+#discounttag>input{
+  padding:2%;
+  border: none;
+  font-size: 12px;
+}
+#discounttag>button{
+  padding: 10px 20px 10px 20px;
+  font-size: 12px;
+  background-color: #03a032;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Footer CSS */
+#bottom {
+
+  height: 30px;
+  background-color: black;
+  margin-top: 20px;
+  display: grid;
+  padding-bottom: 55px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#bottom div {
+
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #AAAAAB;
+}
+
+#copyright {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+#copyright div {
+  width: 100%;
+}
+
 }

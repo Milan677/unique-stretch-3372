@@ -12,8 +12,6 @@ let emptycart=document.querySelector("#empty-cart");
 displaycard(addtocartdata);
 
 
-
-
 function displaycard(data) {
 
 
@@ -21,16 +19,19 @@ function displaycard(data) {
         emptycart.textContent="Your Cart is Empty "
     }
 
-        let total = 0;
+    let total = 0;
     document.querySelector("#addedData").innerHTML = null;
     let count = 1;
     //catching part
     let totalprice = document.querySelector("#fav-sum");
     let checkoutsubtotal=document.querySelector("#totalp");
     let totalprodcount=document.querySelector("#fav-total");
+
     let checkouttotalproducts=document.querySelector("#prod");
     let finaltotalbill=document.querySelector("#ordert");
     let taxonbill=document.querySelector("#tax2");
+
+
     //let discount=document.querySelector("#discounttag");
 
     data.forEach(function (el, i) {
@@ -40,7 +41,7 @@ function displaycard(data) {
 
         let imageProd = document.createElement("img");
         imageProd.setAttribute("src", el.image)
-
+ 
         
       let title = document.createElement("p")
       title.innerText = el.title.substring(0,30);
@@ -72,11 +73,11 @@ function displaycard(data) {
             let b=a.toFixed(2)
             finaltotalbill.textContent=b;
             
-            addtocartdata.push(el)
+            // addtocartdata.push(el)
 
-            JSON.parse(localStorage.parse("CartData"));
+            // JSON.parse(localStorage.parse("CartData"));
 
-            localStorage.setItem("CartData",JSON.stringify(addtocartdata))
+            // localStorage.setItem("CartData",JSON.stringify(addtocartdata))
 
         })
 
@@ -164,10 +165,18 @@ function displaycard(data) {
 
 
 
-    
-
-    
-    
 
 }
 
+
+let x=document.querySelector("#logo>img");
+
+x.addEventListener("click",function(){
+    location.href = "/Shopping Page/shopping.html";
+})
+
+// let y=document.querySelector("#menu>i");
+
+// y.addEventListener("click",function(){
+//     location.href = "/Cartpage/cart.html";
+// })
