@@ -122,6 +122,7 @@ function displayData(data) {
 
     button.addEventListener("click", (event) => {
       event.stopPropagation()
+      
       let alreday = false
 
       for (let i = 0; i < CartData.length; i++) {
@@ -135,6 +136,7 @@ function displayData(data) {
         swal("", "Product already in the cart", "info")
       }
       else {
+        el.quantity = 1
         CartData.push(el)
         localStorage.setItem("CartData", JSON.stringify(CartData))
         swal("", "Product added to cart successfully", "success");
