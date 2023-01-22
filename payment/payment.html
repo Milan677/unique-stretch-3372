@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="global.css" />
-    <style>
-      
-    </style>
-  </head>
-  <body class="mainContainer">
-    <div class="overlay_blur hidden"></div>
-    <div class="notification_container hidden">
-      <h1>Your order has been placed !</h1>
-      <a href="/Home page/Index.html"></a
-      ><button class="btn"><i class="fa fa-home"></i> Home</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Document</title>
+  <link rel="stylesheet" href="payment.css" />
+  <style>
+
+  </style>
+</head>
+
+<body class="mainContainer">
+  <div class="overlay_blur hidden"></div>
+  <div class="notification_container hidden">
+    <h1>Your order has been placed !</h1>
+    <a href="/Home page/Index.html"></a><button class="btn"><i class="fa fa-home"></i> Home</button>
+  </div>
+  <div class="mainInfoCard">
+    <div class="headImage">
+      <img src="https://cdn.shopify.com/s/files/1/0590/4095/6580/files/Untitled_design_x320.png?v=1643627388"
+        alt="icon" />
     </div>
-    <div class="mainInfoCard">
-      <div class="headImage">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0590/4095/6580/files/Untitled_design_x320.png?v=1643627388"
-          alt="icon"
-        />
-      </div>
-      <form class="input-box">
-        <!-- <h1>Information</h1>
+    <form class="input-box">
+      <!-- <h1>Information</h1>
         <div class="info-firstHeading">
           <h2>Contact information</h2>
           <span> Already have an account? <a href="">Log in</a></span>
@@ -43,54 +39,35 @@
           placeholder="Email or mobile phone number"
           maxlength="50"
         /> -->
-        <!-- <div class="form-row">
+      <!-- <div class="form-row">
           <input type="checkbox" id="declaration" name="declaration" />
           <label for="declaration">Email me with news and offers</label>
         </div> -->
-        <h2 class="ship-add">Information</h2>
-        <select
-          name="countryCode"
-          id="countrySelect"
-          required=""
-          class="form-input"
-        >
-          <option value="US">Country/Region</option>
-          <option value="US">United States</option>
-          <option value="IN">India</option>
-          <option disabled="" value="">---</option>
-          <option value="AU">Australia</option>
-          <option value="CA">Canada</option>
-          <option value="CN">China</option>
-          <option value="FR">France</option>
-          <option value="HK">Hong Kong SAR</option>
-          <option value="IN">India</option>
-          <option value="IL">Israel</option>
-          <option value="MY">Malaysia</option>
-          <option value="MU">Mauritius</option>
-          <option value="NP">Nepal</option>
-          <option value="NZ">New Zealand</option>
-          <option value="SG">Singapore</option>
-          <option value="ZA">South Africa</option>
-          <option value="GB">United Kingdom</option>
-          <option value="US">United States</option>
-        </select>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          placeholder="First name"
-          class="form-input"
-          required
-        />
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          placeholder="Last name"
-          class="form-input"
-          required
-        />
-        <!-- <input
+      <h2 class="ship-add">Information</h2>
+      <select name="countryCode" id="countrySelect" required="" class="form-input">
+        <option value="US">Country/Region</option>
+        <option value="US">United States</option>
+        <option value="IN">India</option>
+        <option disabled="" value="">---</option>
+        <option value="AU">Australia</option>
+        <option value="CA">Canada</option>
+        <option value="CN">China</option>
+        <option value="FR">France</option>
+        <option value="HK">Hong Kong SAR</option>
+        <option value="IN">India</option>
+        <option value="IL">Israel</option>
+        <option value="MY">Malaysia</option>
+        <option value="MU">Mauritius</option>
+        <option value="NP">Nepal</option>
+        <option value="NZ">New Zealand</option>
+        <option value="SG">Singapore</option>
+        <option value="ZA">South Africa</option>
+        <option value="GB">United Kingdom</option>
+        <option value="US">United States</option>
+      </select>
+      <input type="text" id="firstName" name="firstName" placeholder="First name" class="form-input" required />
+      <input type="text" id="lastName" name="lastName" placeholder="Last name" class="form-input" required />
+      <!-- <input
           type="text"
           id="company"
           name=""
@@ -98,91 +75,58 @@
           required
           placeholder="company (optional)"
         /> -->
-        <input
-          type="text"
-          id="address"
-          name=""
-          class="form-input full-width"
-          required
-          placeholder="Address"
-        />
-        <!-- <input
+      <input type="text" id="address" name="" class="form-input full-width" required placeholder="Address" />
+      <!-- <input
           type="text"
           id="apartment"
           name=""
           class="form-input full-width"
           placeholder="Apartment, suite, etc. (optional)"
         /> -->
-        <div class="form-row">
-          <input
-            type="text"
-            id="city"
-            name=""
-            placeholder="City"
-            class="form-input"
-            required
-          />
-          <input
-            type="text"
-            id=""
-            name=""
-            placeholder="company (optional)"
-            class="form-input"
-          />
-          <input
-            type="number"
-            id="pincode"
-            name=""
-            placeholder="PIN code"
-            class="form-input"
-            required
-          />
-        </div>
-        <input
-          type="number"
-          id="phone"
-          class="form-input full-width"
-          name=""
-          placeholder="Phone"
-          required
-        />
-        <div class="form-row">
-          <input type="checkbox" id="declaration" name="" />
-          <label for="">Save this information for next time</label>
-        </div>
-        <div class="btn-part">
-          <button type="button" class="return-btn">❮ Return to cart</button>
-          <button type="submit" class="Continue-btn">Continue to Payment</button>
-        </div>
-        <footer>
-          <hr />
-          <ul>
-            <li>Refund policy</li>
-            <li>Shipping policy</li>
-            <li>Privacy policy</li>
-            <li>Terms of service</li>
-          </ul>
-        </footer>
-      </form>
-    </div>
+      <div class="form-row">
+        <input type="text" id="city" name="" placeholder="City" class="form-input" required />
+        <input type="text" id="" name="" placeholder="company (optional)" class="form-input" />
+        <input type="number" id="pincode" name="" placeholder="PIN code" class="form-input" required />
+      </div>
+      <input type="number" id="phone" class="form-input full-width" name="" placeholder="Phone" required />
+      <div class="form-row">
+        <input type="checkbox" id="declaration" name="" />
+        <label for="">Save this information for next time</label>
+      </div>
+      <div class="btn-part">
+        <button type="button" class="return-btn">❮ Return to cart</button>
+        <button type="submit" class="Continue-btn">Continue to Payment</button>
+      </div>
+      <footer>
+        <hr />
+        <ul>
+          <li>Refund policy</li>
+          <li>Shipping policy</li>
+          <li>Privacy policy</li>
+          <li>Terms of service</li>
+        </ul>
+      </footer>
+    </form>
+  </div>
 
-    <div class="mainProduct">
-      <div class="productCards"></div>
-      <div class="InfoCartData">
-        <div class="productPrice productFlex downline">
-          <h2>Subtotal</h2>
-          <h3 id="clothesTotalPrize"></h3>
-        </div>
-        <div class="shippingPart productFlex downline">
-          <h2>Shipping</h2>
-          <h3 id="shippingTax">₹ 70</h3>
-        </div>
-        <div class="totalProduct productFlex downline">
-          <h2>Total</h2>
-          <h1 id="totalPrizeShow">₹ 2323</h1>
-        </div>
+  <div class="mainProduct">
+    <div class="productCards"></div>
+    <div class="InfoCartData">
+      <div class="productPrice productFlex downline">
+        <h2>Subtotal</h2>
+        <h3 id="clothesTotalPrize"></h3>
+      </div>
+      <div class="shippingPart productFlex downline">
+        <h2>Shipping</h2>
+        <h3 id="shippingTax">₹ 70</h3>
+      </div>
+      <div class="totalProduct productFlex downline">
+        <h2>Total</h2>
+        <h1 id="totalPrizeShow">₹ 2323</h1>
       </div>
     </div>
-  </body>
-  <script src="/payment/payment.js"></script>
+  </div>
+</body>
+<script src="/payment/payment.js"></script>
+
 </html>
