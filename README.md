@@ -3,26 +3,49 @@
 
 Upstore is an e-commerce website that specializes in clothing. Users can sign up and browse through a variety of products, add them to their cart, and proceed to checkout. Payment and shipping information can be provided at checkout, and once the payment is processed, users will be redirected to the homepage.
 
-## Installation
+## Getting Started
+To get started with the project, you will need to clone the repository to your local machine. 
 
-To run Upstore on your local machine, you will need to install the following dependencies:
-- Node.js
+# Built With
+
+## Frontend
 - HTML
-- MongoDB
+- CSS
+- Javascript
 
-## Usage
+## Backend
+- Local Storage
+- JSON File
 
-1. Sign up for an account
-2. Browse through the available products
-3. Add items to your cart
-4. Proceed to checkout
-5. Provide payment and shipping information
-6. Confirm your order
+# Pages
+1. Home Page
+2. SignUp and Login
+3. Shopping Page
+4. Search Page
+5. Product Description
+6. Cart Page
+7. Payment and Checkout Page
+
+## Functionalities
+- Slider on Home Page
+- Login and Registration 
+- View Products by categories
+- Search Products
+- Filter products
+- Sort by Price
+- Add to Cart
+- Deleting/incrementing/decrementing from Cart
+- Payment
+
 
 ## Contribution
 
-Upstore is developed and maintained by Kamlesh Das, Prabhat Kumar, Gaurav Tiwari, Raj Tupe, and Lokendra Shekhawat. If you would like to contribute to the project, please submit a pull request with your proposed changes.
+- Kamlesh Das
+- Lokendra Pal Shekhawat 
+- Raj Tupe
+- Prabhat Kumar
+- Gaurav Tiwari
 
 ## Acknowledgments
 
-This project is developed by us.
+Special thanks to Venugopal Burli for their guidance and support during the development of this project.
