@@ -6,7 +6,8 @@ Upstore is an e-commerce website that specializes in clothing. Users can sign up
 ## Getting Started
 To get started with the project, you will need to clone the repository to your local machine. 
 
-### Deployed Link :- https://moonlit-taiyaki-1137b4.netlify.app/
+#### Deployed Link :- https://moonlit-taiyaki-1137b4.netlify.app/
+#### Presentation Video :- https://drive.google.com/file/d/1uD4ysSM2aTG4IdVrifPPfzjBA7pIQrLW/view
 
 # Built With
 
